@@ -14,9 +14,6 @@ export default function Header() {
           <Image className={`header-logo`} src="/UST-logo.svg" alt="Logo" width={48} height={52} priority />
         </Link>
         <div className="header-items">
-          <Link href="/how-to-start" className={`header-item ${pathname.startsWith("/how-to-start") ? "active" : ""}`}>
-            How to start
-          </Link>
           <Link href="/documentation" className={`header-item ${pathname.startsWith("/documentation") ? "active" : ""}`}>
             Documentation
           </Link>
