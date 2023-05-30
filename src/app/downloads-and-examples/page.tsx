@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <NotificationsContainer />
-      LANDING PAGE
+      DOWNLOADS AND EXAMPLES
     </>
   );
 }

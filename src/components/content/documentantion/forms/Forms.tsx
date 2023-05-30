@@ -1,3 +1,4 @@
+"use client";
 import React, { ReactElement } from "react";
 
 import Notification, { NotificationBody, NotificationHeader } from "stepone-ui/notification";
@@ -10,10 +11,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 
 import { SimpleForm, simple_result } from "./examples/form-examples";
 import ComponentExample from "../ComponentExample";
-
-// import ComponentExample from "../components/component-example";
-// import { SimpleForm, simple_result } from "./forms/form-examples";
-// import FormExampleWithValidations, { form_validations_example } from "./forms/form-example-with-validations";
+import { FormExampleWithValidations, form_validations_example } from "./examples/form-example-with-validations";
 
 const FormGuideline: React.FC<any> = (): ReactElement => {
   return (
@@ -218,7 +216,7 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
             </CardBody>
           </Card>
         </div>
-        {/* 
+
         <div className="mb6" id="typical-form">
           <Card>
             <CardHeader>
@@ -528,7 +526,7 @@ export default UserModal;`}</SyntaxHighlighter>
           <Notification show info className="static-notification mb4">
             <NotificationBody>As in normal HTML, if a button doesn't have a type="button" will behave like a button "submit", which if clicked will trigger the form submission.</NotificationBody>
           </Notification>
-        </div> */}
+        </div>
       </div>
     </div>
   );

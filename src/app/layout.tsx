@@ -20,10 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </Head>
       <body className="stepone-ui">
         <Header />
-        <div className="g-container flex">
-          <Sidebar />
-          <main className="g-item_16 p4">{children}</main>
-        </div>
+        <main className="g-item_16 p4">{children}</main>
       </body>
     </html>
   );

@@ -1,23 +1,14 @@
+"use client";
 import React, { ReactElement } from "react";
-import { useSelector } from "react-redux";
-
-import { INotificationitem } from "./notifications-service";
-import NotfificationMessage from "./notification";
-
-import { notifications } from "@/redux/slices/notificationsSlice";
+import store from "@/redux/store";
+import Notifications from "./notifications";
+import { Provider } from "react-redux";
 
 const NotificationsContainer: React.FC<any> = (props: any): ReactElement => {
-  const _notificationsState: any = useSelector(notifications);
-
   return (
-    <div className={`notifications-container`}>
-      {props.children}
-      {_notificationsState &&
-        _notificationsState.notifications &&
-        _notificationsState.notifications.map((item: INotificationitem) => {
-          return <NotfificationMessage type={item.type} id={item.id} key={item.id} timer={item.timer} richText={item.richText} content={item.content} />;
-        })}
-    </div>
+    <Provider store={store}>
+      <Notifications />
+    </Provider>
   );
 };
 

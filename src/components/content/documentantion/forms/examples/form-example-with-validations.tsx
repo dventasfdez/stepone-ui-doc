@@ -1,10 +1,35 @@
+import { addNotification } from "@/components/shared/notifications/notifications-service";
 import React, { ReactElement } from "react";
-import { required } from "../../../../components/shared/forms/utilities/validations";
-import { Form, TextInput, CheckboxInput, SelectInput, TextArea } from "../../../../components/shared/forms";
-import { addNotification } from "../../../shared/notifications/notifications-service";
+
+import { Form, TextInput, CheckboxInput, SelectInput, TextArea, serializeForm } from "stepone-ui/forms";
+const validationIsGood = undefined;
 
 let formRef: any = undefined;
-
+export const required = (value: string | string[] | undefined) => {
+  if (typeof value === "number") {
+    return validationIsGood;
+  }
+  if (typeof value === "object") {
+    const value2: any = value;
+    if (value2?.type === "FileSelector") {
+      if (!value2?.state?.value) {
+        return "Required";
+      }
+    } else if (!value?.length) {
+      return "Required";
+    }
+  } else if (typeof value === "string") {
+    if (value.replace(/\s/g, "").length > 0) {
+      return validationIsGood;
+    } else {
+      return "Required";
+    }
+  } else if (value !== null && typeof value !== "undefined") {
+    return validationIsGood;
+  } else {
+    return "Required";
+  }
+};
 const handleSubmit = async (event: any) => {
   const isValid_react = await formRef.current.isValid();
   const values_react = formRef.current.serialize();

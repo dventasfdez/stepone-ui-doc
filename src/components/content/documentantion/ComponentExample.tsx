@@ -1,3 +1,4 @@
+"use client";
 import Card, { CardFooter, CardBody } from "stepone-ui/card";
 import ContentSwitcher, { ContentSwitcherItem } from "stepone-ui/contentSwitcher";
 import Tabs, { TabItem } from "stepone-ui/tabs";
