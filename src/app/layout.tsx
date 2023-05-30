@@ -1,10 +1,8 @@
 import Header from "@/components/master/Header";
-import { Inter } from "next/font/google";
+
 import Head from "next/head";
 import "./globals.css";
-import Sidebar from "@/components/master/Sidebar";
 import NotificationsContainer from "@/components/shared/notifications/notifications-container";
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "UST | StepOne - UI framework",
@@ -20,7 +18,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </Head>
       <body className="stepone-ui">
         <Header />
-        <main className="g-item_16 p4">{children}</main>
+        <main className="g-container">{children}</main>
+        <NotificationsContainer />
       </body>
     </html>
   );

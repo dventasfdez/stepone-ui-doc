@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Sidebar() {
   return (
@@ -15,7 +16,10 @@ export default function Sidebar() {
           <ul className="tree-container ">
             <ul>
               <li role="button" className="tree-element ">
-                <a href="#">Forms</a>
+                <Link href="/documentation">Documentation</Link>
+              </li>
+              <li role="button" className="tree-element ">
+                <Link href="/documentation/forms">Forms</Link>
               </li>
               {/* <li role="button" className="tree-element ">
                 <span className="material-icons icon-order">mood</span>Item Two<span className="material-icons tree-element-icon-right">keyboard_arrow_down</span>
