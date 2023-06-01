@@ -18,7 +18,7 @@ const data_mock = [
     title: "I am title",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sunt natus possimus labore similique consectetur vero odio nemo ipsam aperiam earum modi sit quia harum, vel aliquid commodi illo quaerat, pariatur ullam quam numquam illum quisquam porro. Amet cupiditate exercitationem fugiat harum recusandae et, neque sapiente voluptas ut at ex. 1",
-    icon: <span className="material-icons">local_fire_department</span>,
+    icon: "local_fire_department",
     badge: 8,
     disabled: true,
   },
@@ -27,7 +27,7 @@ const data_mock = [
     title: "I am title",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sunt natus possimus labore similique consectetur vero odio nemo ipsam aperiam earum modi sit quia harum, vel aliquid commodi illo quaerat, pariatur ullam quam numquam illum quisquam porro. Amet cupiditate exercitationem fugiat harum recusandae et, neque sapiente voluptas ut at ex. 2",
-    icon: <span className="material-icons">local_fire_department</span>,
+    icon: "local_fire_department",
     badge: 8,
   },
   {
@@ -35,7 +35,7 @@ const data_mock = [
     title: "I am title",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sunt natus possimus labore similique consectetur vero odio nemo ipsam aperiam earum modi sit quia harum, vel aliquid commodi illo quaerat, pariatur ullam quam numquam illum quisquam porro. Amet cupiditate exercitationem fugiat harum recusandae et, neque sapiente voluptas ut at ex. 3",
-    icon: <span className="material-icons">local_fire_department</span>,
+    icon: "local_fire_department",
     badge: 8,
   },
 ];

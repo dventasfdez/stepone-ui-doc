@@ -65,6 +65,7 @@ export const AvatarWithoutImageQuote: React.FC<any> = (): ReactElement => {
     <Quote
       quote={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolorem suscipit voluptatem! Minus obcaecati illo adipisci amet? Minus, expedita nostrum?"}
       avatar={{
+        img: "https://www.w3schools.com/howto/img_avatar.png",
         title: "John Doe",
         subtitle: "Software Developer",
       }}

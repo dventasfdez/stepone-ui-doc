@@ -34,7 +34,7 @@ const StepperGuideline: React.FC<any> = (): ReactElement => {
       <h4>Variants</h4>
       <Notification show read className="static-notification mb6">
         <NotificationHeader>Without helper</NotificationHeader>
-        <NotificationBody>To create stepper without helper just remove "detail" property.</NotificationBody>
+        <NotificationBody>To create stepper without helper just remove &quot;detail&quot; property.</NotificationBody>
       </Notification>
       <Notification show read className="static-notification mb6">
         <NotificationHeader>Horizontal Stepper</NotificationHeader>

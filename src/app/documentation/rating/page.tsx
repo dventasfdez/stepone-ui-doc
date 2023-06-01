@@ -8,7 +8,7 @@ import { AlternativeAmountRating, DefaultAmountRating, LabelRating, alternative_
 
 const RatingGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <div>
+    <NoSSR>
       <h3>Rating</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>Rating component displays sort of numbers to rate something. It is used to display a rating value in a form.</NotificationBody>
@@ -31,7 +31,7 @@ const RatingGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Example of a rating with label by adding label prop.</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "label_rating.tsx", code: label_rating }]} componentExample={<LabelRating />} />
-    </div>
+    </NoSSR>
   );
 };
 

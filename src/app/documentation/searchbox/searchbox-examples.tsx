@@ -21,7 +21,7 @@ export const searchbox_props = [
 
 // DEFAULT SEARCHBOX EXAMPLE
 export const DefaultSearchbox: React.FC<any> = (): ReactElement => {
-  return <Searchbox onChange={function noRefCheck() {}} placeholder="Search text" />;
+  return <Searchbox name="search" onChange={function noRefCheck() {}} placeholder="Search text" />;
 };
 
 export const default_searchbox = `
@@ -37,7 +37,7 @@ export default DefaultSearchbox
 
 // SMALL SEARCHBOX EXAMPLE
 export const SmallSearchbox: React.FC<any> = (): ReactElement => {
-  return <Searchbox onChange={function noRefCheck() {}} placeholder="Search text" small />;
+  return <Searchbox name="search" onChange={function noRefCheck() {}} placeholder="Search text" small />;
 };
 
 export const small_searchbox = `
@@ -53,7 +53,7 @@ export default SmallSearchbox
 
 // FILLED SEARCHBOX EXAMPLE
 export const FilledSearchbox: React.FC<any> = (): ReactElement => {
-  return <Searchbox onChange={function noRefCheck() {}} placeholder="Search text" value="Search text value" />;
+  return <Searchbox name="search" onChange={function noRefCheck() {}} placeholder="Search text" value="Search text value" />;
 };
 
 export const filled_searchbox = `
@@ -69,7 +69,7 @@ export default FilledSearchbox
 
 // DISABLED SEARCHBOX EXAMPLE
 export const DisabledSearchbox: React.FC<any> = (): ReactElement => {
-  return <Searchbox onChange={function noRefCheck() {}} placeholder="Search text" value="Search text value" disabled />;
+  return <Searchbox name="search" onChange={function noRefCheck() {}} placeholder="Search text" value="Search text value" disabled />;
 };
 
 export const disabled_searchbox = `
