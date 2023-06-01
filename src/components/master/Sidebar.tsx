@@ -34,27 +34,6 @@ export default function Sidebar() {
             <ul>
               <li className="small-title guidline-option">
                 <Link href="/documentation/forms">Forms</Link>
-
-                <ul>
-                  <li className="small-title guidline-option">
-                    <Link href="#">SelectInput</Link>
-                  </li>
-                  <li className="small-title guidline-option">
-                    <Link href="#">Select</Link>
-                  </li>
-                  <li className="small-title guidline-option">
-                    <Link href="#">SelectFilter</Link>
-                  </li>
-                  <li className="small-title guidline-option">
-                    <Link href="#">DateInput</Link>
-                  </li>
-                  <li className="small-title guidline-option">
-                    <Link href="#">NumberInput</Link>
-                  </li>
-                  <li className="small-title guidline-option">
-                    <Link href="#">SearchInput</Link>
-                  </li>
-                </ul>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">Data tables</Link>
@@ -84,10 +63,10 @@ export default function Sidebar() {
                 <Link href="/documentation/calendars">Calendars</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Cards</Link>
+                <Link href="/documentation/cards">Cards</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Carousel</Link>
+                <Link href="/documentation/carousel">Carousel</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">Chips</Link>

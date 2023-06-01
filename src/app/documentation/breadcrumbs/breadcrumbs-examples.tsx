@@ -22,7 +22,7 @@ export const BreadcrumbComponent: React.FC<any> = (): ReactElement => {
 
 export const breadcrumb = `
 import React, { ReactElement } from "react";
-import Breadcrumb, { BreadcrumbItem } from "@adeccoux/tag-ds/breadcrumb";
+import Breadcrumb, { BreadcrumbItem } from "stepone-ui/breadcrumb";
 
 const BreadcrumbComponent: React.FC<any> = (): ReactElement => {
   return (
@@ -52,7 +52,7 @@ export const DropdownBreadcrumbComponent: React.FC<any> = (): ReactElement => {
 
 export const dropdown_breadcrumb = `
 import React, { ReactElement } from "react";
-import Breadcrumb, { BreadcrumbItem } from "@adeccoux/tag-ds/breadcrumb";
+import Breadcrumb, { BreadcrumbItem } from "stepone-ui/breadcrumb";
 
 const DropdownBreadcrumbComponent: React.FC<any> = (): ReactElement => {
 return (

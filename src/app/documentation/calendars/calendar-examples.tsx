@@ -24,7 +24,7 @@ export const SimpleCalendar: React.FC<any> = (): ReactElement => {
 
 export const simple_calendar = `
 import React, { ReactElement } from "react";
-import Calendar from "@adeccoux/tag-ds/calendar";
+import Calendar from "stepone-ui/calendar";
 
 const SimpleCalendar: React.FC<any> = (): ReactElement => {
   return <Calendar />;
@@ -40,7 +40,7 @@ export const DefaultDateCalendar: React.FC<any> = (): ReactElement => {
 
 export const defaultDate_calendar = `
 import React, { ReactElement } from "react";
-import Calendar from "@adeccoux/tag-ds/calendar";
+import Calendar from "stepone-ui/calendar";
 import { data_mock } from "./data-mock-file";
     
 const defaultDateCalendar: React.FC<any> = (): ReactElement => {
@@ -61,7 +61,7 @@ export const MininumDateCalendar: React.FC<any> = (): ReactElement => {
 
 export const minDate_calendar = `
 import React, { ReactElement } from "react";
-import Calendar from "@adeccoux/tag-ds/calendar";
+import Calendar from "stepone-ui/calendar";
 import { data_mock } from "./data-mock-file";
     
 const minDateCalendar: React.FC<any> = (): ReactElement => {
@@ -82,7 +82,7 @@ export const MaximumDateCalendar: React.FC<any> = (): ReactElement => {
 
 export const maxDate_calendar = `
 import React, { ReactElement } from "react";
-import Calendar from "@adeccoux/tag-ds/calendar";
+import Calendar from "stepone-ui/calendar";
 import { data_mock } from "./data-mock-file";
       
 const maxDateCalendar: React.FC<any> = (): ReactElement => {
@@ -103,7 +103,7 @@ export const SelectedDatesCalendar: React.FC<any> = (): ReactElement => {
 
 export const selectedDates_calendar = `
 import React, { ReactElement } from "react";
-import Calendar from "@adeccoux/tag-ds/calendar";
+import Calendar from "stepone-ui/calendar";
 import { data_mock } from "./data-mock-file";
       
 const selectedDatesCalendar: React.FC<any> = (): ReactElement => {
@@ -124,7 +124,7 @@ export const ActiveDatesCalendar: React.FC<any> = (): ReactElement => {
 
 export const activeDates_calendar = `
 import React, { ReactElement } from "react";
-import Calendar from "@adeccoux/tag-ds/calendar";
+import Calendar from "stepone-ui/calendar";
 import { activeDates_data_mock, selectedDates_data_mock } from "./data-mock-file";
         
 const activeDatesCalendar: React.FC<any> = (): ReactElement => {
@@ -151,7 +151,7 @@ export const DisabledDatesCalendar: React.FC<any> = (): ReactElement => {
 
 export const disabledDates_calendar = `
 import React, { ReactElement } from "react";
-import Calendar from "@adeccoux/tag-ds/calendar";
+import Calendar from "stepone-ui/calendar";
 import { data_mock } from "./data-mock-file";
         
 const disabledDatesCalendar: React.FC<any> = (): ReactElement => {

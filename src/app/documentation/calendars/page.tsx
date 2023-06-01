@@ -26,10 +26,10 @@ import {
   DisabledDatesCalendar,
   disabledDates_data_mock_file,
 } from "./calendar-examples";
-
+import NoSSR from "@/components/shared/notifications/noSSR/noSSR";
 const CalendarGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <div>
+    <NoSSR>
       <h3>Calendars</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>The Calendars component is used when we want to render a styled calendar.This component has props to control its different states and variants.</NotificationBody>
@@ -108,7 +108,7 @@ const CalendarGuideline: React.FC<any> = (): ReactElement => {
         ]}
         componentExample={<DisabledDatesCalendar />}
       />
-    </div>
+    </NoSSR>
   );
 };
 

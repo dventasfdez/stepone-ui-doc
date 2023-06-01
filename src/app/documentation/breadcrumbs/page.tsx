@@ -5,13 +5,13 @@ import { BreadcrumbComponent, DropdownBreadcrumbComponent, breadcrumb, breadcrum
 import Notification, { NotificationBody, NotificationHeader } from "stepone-ui/notification";
 import ComponentPropsTable from "@/components/content/documentantion/component-props-table";
 import ComponentExample from "@/components/content/documentantion/ComponentExample";
-
+import NoSSR from "@/components/shared/notifications/noSSR/noSSR";
 const BreadcrumbsGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <div>
+    <NoSSR>
       <h3>Breadcrumbs</h3>
       <Notification show read className="static-notification mb6">
-        <NotificationBody>The Breadcrumbs is a styled component that displays the user's current location within the application.</NotificationBody>
+        <NotificationBody>The Breadcrumbs is a styled component that displays the user&apos;s current location within the application.</NotificationBody>
       </Notification>
       <ComponentPropsTable propsDefinition={breadcrumbs_props} title="Breadcrumbs Props" />
       <hr className="mb3" />
@@ -26,7 +26,7 @@ const BreadcrumbsGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Example of Breadcrumbs with dropdown.</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "dropdown_breadcrumb.tsx", code: dropdown_breadcrumb }]} componentExample={<DropdownBreadcrumbComponent />} />
-    </div>
+    </NoSSR>
   );
 };
 

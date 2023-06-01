@@ -23,7 +23,7 @@ export const BigAvatar: React.FC<any> = (): ReactElement => {
 };
 export const big_avatar = `
 import React, { ReactElement } from "react";
-import Avatar from "@adeccoux/tag-ds/avatar";
+import Avatar from "stepone-ui/avatar";
 
 const BigAvatar: React.FC<any> = (): ReactElement => {
   return (
@@ -47,7 +47,7 @@ export const MediumAvatar: React.FC<any> = (): ReactElement => {
 
 export const medium_avatar = `
 import React, { ReactElement } from "react";
-import Avatar from "@adeccoux/tag-ds/avatar";
+import Avatar from "stepone-ui/avatar";
 
 const MediumAvatar: React.FC<any> = (): ReactElement => {
   return (
@@ -71,7 +71,7 @@ export const SmallAvatar: React.FC<any> = (): ReactElement => {
 
 export const small_avatar = `
 import React, { ReactElement } from "react";
-import Avatar from "@adeccoux/tag-ds/avatar";
+import Avatar from "stepone-ui/avatar";
 
 const SmallAvatar: React.FC<any> = (): ReactElement => {
   return (
@@ -95,7 +95,7 @@ export const AvatarTitle: React.FC<any> = (): ReactElement => {
 
 export const avatar_title = `
 import React, { ReactElement } from "react";
-import Avatar from "@adeccoux/tag-ds/avatar";
+import Avatar from "stepone-ui/avatar";
 
 const AvatarTitle: React.FC<any> = (): ReactElement => {
   return (
@@ -119,7 +119,7 @@ export const AvatarSubtitle: React.FC<any> = (): ReactElement => {
 
 export const avatar_subtitle = `
   import React, { ReactElement } from "react";
-  import Avatar from "@adeccoux/tag-ds/avatar";
+  import Avatar from "stepone-ui/avatar";
   
   const AvatarSubtitle: React.FC<any> = (): ReactElement => {
     return (
@@ -143,7 +143,7 @@ export const DisabledAvatar: React.FC<any> = (): ReactElement => {
 
 export const disabled_avatar = `
 import React, { ReactElement } from "react";
-import Avatar from "@adeccoux/tag-ds/avatar";
+import Avatar from "stepone-ui/avatar";
 
 const DisabledAvatar: React.FC<any> = (): ReactElement => {
     return (
@@ -167,7 +167,7 @@ export const BadgeAvatar: React.FC<any> = (): ReactElement => {
 
 export const badge_avatar = `
   import React, { ReactElement } from "react";
-  import Avatar from "@adeccoux/tag-ds/avatar";
+  import Avatar from "stepone-ui/avatar";
   
   const BadgeAvatar: React.FC<any> = (): ReactElement => {
       return (
