@@ -78,10 +78,10 @@ export default function Sidebar() {
                 <Link href="/documentation/drawer">Drawer</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">DropdownMenu</Link>
+                <Link href="/documentation/dropdown-menu">DropdownMenu</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">FileUploader</Link>
+                <Link href="/documentation/file-uploader">FileUploader</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">Link</Link>
