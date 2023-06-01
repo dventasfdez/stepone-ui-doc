@@ -4,6 +4,7 @@ body {
 
 .drawer-content {
   max-width: calc(100% - 328px);
+  width: 100%;
 }
 
 .static-notification {
