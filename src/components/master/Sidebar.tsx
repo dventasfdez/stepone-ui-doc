@@ -69,7 +69,7 @@ export default function Sidebar() {
                 <Link href="/documentation/carousel">Carousel</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Chips</Link>
+                <Link href="/documentation/chips">Chips</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">ContentSwitcher</Link>
