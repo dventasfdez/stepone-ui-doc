@@ -75,7 +75,7 @@ export default function Sidebar() {
                 <Link href="/documentation/content-switcher">ContentSwitcher</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Drawer</Link>
+                <Link href="/documentation/drawer">Drawer</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">DropdownMenu</Link>
