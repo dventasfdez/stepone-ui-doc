@@ -84,59 +84,59 @@ export default function Sidebar() {
                 <Link href="/documentation/file-uploader">FileUploader</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Link</Link>
+                <Link href="/documentation/link">Link</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Loader</Link>
+                <Link href="/documentation/loader">Loader</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Modal</Link>
+                <Link href="#">Modal ***</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Notifications</Link>
+                <Link href="/documentation/notifications">Notifications</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">OverflowMenu</Link>
+                <Link href="/documentation/overflow-menu">OverflowMenu</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Paginator</Link>
+                <Link href="/documentation/paginator">Paginator</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Progress Bar</Link>
+                <Link href="/documentation/progress-bar">Progress Bar</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Quote</Link>
+                <Link href="/documentation/quote">Quote</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Rating</Link>
+                <Link href="/documentation/rating">Rating</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Searchbox</Link>
+                <Link href="/documentation/searchbox">Searchbox</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Slider</Link>
+                <Link href="/documentation/slider">Slider</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Status tag</Link>
+                <Link href="/documentation/status-tag">Status tag</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Stepper</Link>
+                <Link href="/documentation/stepper">Stepper</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Tabs</Link>
+                <Link href="/documentation/tabs">Tabs</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Toggle</Link>
+                <Link href="/documentation/toggle">Toggle</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Tooltip</Link>
+                <Link href="/documentation/tooltip">Tooltip</Link>
               </li>
 
               <li className="small-title guidline-option">
-                <Link href="#">Tree View</Link>
+                <Link href="/documentation/treeview">Tree View</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Video Preview</Link>
+                <Link href="/documentation/video-preview">Video Preview</Link>
               </li>
             </ul>
           </div>
