@@ -81,7 +81,7 @@ export default function Sidebar() {
                 <Link href="/documentation/breadcrumbs">Breadcrumbs</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Calendars</Link>
+                <Link href="/documentation/calendars">Calendars</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">Cards</Link>
