@@ -36,13 +36,13 @@ export default function Sidebar() {
                 <Link href="/documentation/forms">Forms</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Data tables</Link>
+                <span>Data tables</span>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Notifications system</Link>
+                <span>Notifications system</span>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Internationalization</Link>
+                <span>Internationalization</span>
               </li>
             </ul>
           </div>
@@ -90,7 +90,7 @@ export default function Sidebar() {
                 <Link href="/documentation/loader">Loader</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Modal ***</Link>
+                <span>Modal</span>
               </li>
               <li className="small-title guidline-option">
                 <Link href="/documentation/notifications">Notifications</Link>
