@@ -2,9 +2,9 @@
 import React, { ReactElement } from "react";
 import Notification, { NotificationBody, NotificationHeader } from "stepone-ui/notification";
 import ComponentExample from "@/components/content/documentantion/ComponentExample";
+import NoSSR from "@/components/shared/notifications/noSSR/noSSR";
 import { ActiveChips, Chips, ColouredChips, DisabledChips, active_chips, chips, coloured_chips, disabled_chips } from "./chips-examples";
 
-import NoSSR from "@/components/shared/notifications/noSSR/noSSR";
 const ChipsGuideline: React.FC<any> = (): ReactElement => {
   return (
     <NoSSR>
