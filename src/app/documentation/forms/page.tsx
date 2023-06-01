@@ -1,6 +1,6 @@
 import FormGuideline from "@/components/content/documentantion/forms/Forms";
 
-export default function DocumentationPage() {
+export default function Forms() {
   return (
     <>
       <FormGuideline />

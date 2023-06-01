@@ -16,13 +16,16 @@ export default function Sidebar() {
             <p className="caption">StepOne Fundation </p>
             <ul className="mb3">
               <li className="small-title guidline-option">
-                <Link href="#">Typography</Link>
+                <Link href="/documentation/typography">Typography</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Grid</Link>
+                <Link href="/documentation/grid">Grid</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">Helpers</Link>
+              </li>
+              <li className="small-title guidline-option">
+                <Link href="#">Variables</Link>
               </li>
             </ul>
           </div>

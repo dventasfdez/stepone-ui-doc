@@ -187,8 +187,8 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
       <div className="mb6">
         <p>The Form component allows you to simply validate, serialize, automatically set values to the inputs inside it.</p>
         <p>
-          The form component uses React context in order to work and for the form to &apos;be aware&apos; of the inputs inside it. Then it generates a contexts, then when the inputs detect that context and get listed at the form level, so
-          the form will be able to change the state on them.
+          The form component uses React context in order to work and for the form to &apos;be aware&apos; of the inputs inside it. Then it generates a contexts, then when the inputs detect that
+          context and get listed at the form level, so the form will be able to change the state on them.
         </p>
         <p>This way the values passed to a form as a Javascript object can be applied to the fields automatically, but also run the validatios and set them to valid/invalid.</p>
       </div>
@@ -205,8 +205,8 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
             </CardHeader>
             <CardBody>
               <p>
-                It's a form on it's simpliest sape, just a form with some inputs that when clicking the submit button serialices its values, check in the code the function &apos;handleSubmit&apos; to see how it deals with the form submit
-                output
+                It&apos;s a form on it&apos;s simpliest sape, just a form with some inputs that when clicking the submit button serialices its values, check in the code the function
+                &apos;handleSubmit&apos; to see how it deals with the form submit output
               </p>
               <Notification show info className="static-notification mb4">
                 <NotificationHeader>Info</NotificationHeader>
@@ -226,9 +226,9 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
             <CardBody>
               <p>This is a form that contains validations, including custom ones and asyncronous ones.</p>
               <Notification show info className="static-notification mb4">
-                <NotificationBody>Note how to set a custon validation function in the code "customValidationFunction"</NotificationBody>
+                <NotificationBody>Note how to set a custon validation function in the code &quot;customValidationFunction&quot;</NotificationBody>
               </Notification>
-              <p>It also sets the initial values passed to the Form component using the "values" property.</p>
+              <p>It also sets the initial values passed to the Form component using the &quot;values&quot; property.</p>
               <Notification show info className="static-notification mb4">
                 <NotificationBody>See also the nested javascript in the values pass to the form and in the output of the serialization (in the console)</NotificationBody>
               </Notification>
@@ -243,7 +243,10 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
       <div id="validations">
         <h4>Validations</h4>
         <hr className="mb4" />
-        <p>The validations are functions that using the value, the form context or the actual input component, apply some logic and return an error or "undefined" if the validation passes succesfully .</p>
+        <p>
+          The validations are functions that using the value, the form context or the actual input component, apply some logic and return an error or &quot;undefined&quot; if the validation passes
+          succesfully .
+        </p>
 
         <div id="default-validations" className="mb4">
           <h5>
@@ -263,10 +266,13 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
           <h5>
             <strong>Custom validations</strong>
           </h5>
-          <p>You can also create your own custom validation functions. As parameters of the validations by default you can receive: value of the input, context of the input and the input component it self.</p>
+          <p>
+            You can also create your own custom validation functions. As parameters of the validations by default you can receive: value of the input, context of the input and the input component it
+            self.
+          </p>
           <SyntaxHighlighter style={vs} language={"typecript"}>{`const customValidationFunction = (value: any, _context: any, inputComponent: any) => {
   if (value !== "Good morning") {
-    return "Value is wrong, needs to be 'Good morning'";
+    return "Value is wrong, needs to be &apos;Good morning&apos;";
   }
 };
 <TextInput validations={[customValidationFunction]} label="Text input" name="textInput" />
@@ -279,7 +285,7 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
           </h5>
           <p>You are allowed also to use async functions (for instance to call an endpoint to verify an email)</p>
           <Notification show info className="static-notification mb4">
-            <NotificationBody>While the function is running the input will show a class "loading" that should display an spinnner (if it's set in the CSS)</NotificationBody>
+            <NotificationBody>While the function is running the input will show a class &quot;loading&quot; that should display an spinnner (if it&apos;s set in the CSS)</NotificationBody>
           </Notification>
           <SyntaxHighlighter style={vs} language={"typecript"}>{`const validEmail = async (value: any, _context: any, inputComponent: any) => {
   const emailIsValid = await API.checkEmail(value);
@@ -408,7 +414,7 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
 
         <hr className="mb4" />
 
-        <p>Here we'll describe the methods that you can use from outside the form.</p>
+        <p>Here we&apos;ll describe the methods that you can use from outside the form.</p>
 
         <div className="mb4" id="external-methods-validate">
           <h5>
@@ -431,7 +437,7 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
           <h5>
             <strong>Submit a form remotely</strong>
           </h5>
-          <p>You can force a form to submit remotely using it's reference</p>
+          <p>You can force a form to submit remotely using it&apos;s reference</p>
           <SyntaxHighlighter style={vs} language={"typecript"}>{` formRef.current.submit()`}</SyntaxHighlighter>
         </div>
 
@@ -457,7 +463,10 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
 
           <p>What you can do is add a modal that renders a form outside this form (usually in the root of the DOM), but for react it would be still inside the same context.</p>
 
-          <p>The problem in reality would be that if the modal contains a submit button, even if outside the form, as for react virtualDom is inside the other, would trigger the submit in both forms, the parent and the modal</p>
+          <p>
+            The problem in reality would be that if the modal contains a submit button, even if outside the form, as for react virtualDom is inside the other, would trigger the submit in both forms,
+            the parent and the modal
+          </p>
 
           <p>You need to replace the submit button of the modal by a normal button that triggers the submit.</p>
 
@@ -514,9 +523,11 @@ export default UserModal;`}</SyntaxHighlighter>
             <strong>Buttons unintentionally trigger the form submission</strong>
           </h5>
 
-          <p>Very often you'll see that a button that is intended to do something, also triggers the form submission.</p>
+          <p>Very often you&apos;ll see that a button that is intended to do something, also triggers the form submission.</p>
           <Notification show info className="static-notification mb4">
-            <NotificationBody>As in normal HTML, if a button doesn't have a type="button" will behave like a button "submit", which if clicked will trigger the form submission.</NotificationBody>
+            <NotificationBody>
+              As in normal HTML, if a button doesn&apos;t have a type=&quot;button&quot; will behave like a button &quot;submit&quot;, which if clicked will trigger the form submission.
+            </NotificationBody>
           </Notification>
         </div>
       </div>

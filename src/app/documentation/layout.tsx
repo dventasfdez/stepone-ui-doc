@@ -4,7 +4,7 @@ export default function DocumentationLayout({ children }: { children: React.Reac
   return (
     <div className="g-container flex">
       <Sidebar />
-      <main className="g-item_16 p4">{children}</main>
+      <main className="drawer-content p4">{children}</main>
     </div>
   );
 }
