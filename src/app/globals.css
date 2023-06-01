@@ -61,4 +61,5 @@ pre {
 
 .stepone-ui ul li ul {
   margin-top: calc(var(--body-medium-line-height) / 2);
+  margin-bottom: calc(var(--body-medium-line-height) / 2);
 }

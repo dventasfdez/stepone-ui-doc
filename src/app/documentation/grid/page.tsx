@@ -44,7 +44,7 @@ export default function Grid() {
             <li>g-item_2: This item will occupied 2 columns in the grid.</li>
             <li>g-item_1: This item will occupied 1 columns in the grid.</li>
           </ul>
-          <ComponentExample codeExample={[{ name: "simple-form.tsx", code: grid_example_16 }]} componentExample={<GridExample16Columns />} />
+          <ComponentExample language="xml" codeExample={[{ name: "simple-form.tsx", code: grid_example_16, language: "xml" }]} componentExample={<GridExample16Columns />} />
           <h3>Tablet</h3>
           <p>In tablet this option will converted in grid based in 8 columns.</p>
           <p>
@@ -93,7 +93,7 @@ export default function Grid() {
             <li>g-item_2: This item will occupied 2 columns in the grid.</li>
             <li>g-item_1: This item will occupied 1 columns in the grid.</li>
           </ul>
-          <ComponentExample codeExample={[{ name: "simple-form.tsx", code: grid_example_12 }]} componentExample={<GridExample12Columns />} />
+          <ComponentExample codeExample={[{ name: "simple-form.tsx", code: grid_example_12, language: "xml" }]} componentExample={<GridExample12Columns />} />
           <h3>Tablet</h3>
           <p>In tablet this option will converted in grid based in 6 columns.</p>
           <p>

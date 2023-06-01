@@ -12,8 +12,8 @@ export default function Sidebar() {
           </p>
         </div>
         <div className="drawer-body ">
-          <div>
-            <p className="caption">StepOne Fundation </p>
+          <div className="mb4">
+            <p className="caption mb2">StepOne Fundation </p>
             <ul className="mb3">
               <li className="small-title guidline-option">
                 <Link href="/documentation/typography">Typography</Link>
@@ -22,20 +22,20 @@ export default function Sidebar() {
                 <Link href="/documentation/grid">Grid</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Helpers</Link>
+                <Link href="/documentation/helpers">Helpers</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Variables</Link>
+                <Link href="/documentation/variables">Variables</Link>
               </li>
             </ul>
           </div>
-          <div>
-            <p className="caption">StepOne Modules </p>
-            <ul className="mb3">
+          <div className="mb4">
+            <p className="caption mb2">StepOne Modules </p>
+            <ul>
               <li className="small-title guidline-option">
                 <Link href="/documentation/forms">Forms</Link>
 
-                <ul className="mb3">
+                <ul>
                   <li className="small-title guidline-option">
                     <Link href="#">SelectInput</Link>
                   </li>
@@ -57,13 +57,19 @@ export default function Sidebar() {
                 </ul>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Results</Link>
+                <Link href="#">Data tables</Link>
+              </li>
+              <li className="small-title guidline-option">
+                <Link href="#">Notifications system</Link>
+              </li>
+              <li className="small-title guidline-option">
+                <Link href="#">Internationalization</Link>
               </li>
             </ul>
           </div>
 
-          <div>
-            <p className="caption">StepOne Components</p>
+          <div className="mb4">
+            <p className="caption mb2">StepOne Components</p>
             <ul className="mb3">
               <li className="small-title guidline-option">
                 <Link href="#">Calendars</Link>

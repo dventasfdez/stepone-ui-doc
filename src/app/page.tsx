@@ -38,7 +38,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <img src="https://icy-hill-03244c403.1.azurestaticapps.net/d0ea0911c133fd5ce025.jpeg" alt="hero image" className="hero-background  " />
+        <img src="/home-bg-image.png" alt="hero image" className="hero-background  " />
       </div>
       {/* <div style={{ padding: "60px 144px" }} className="flex">
         <div className="g-item_4 ">

@@ -1,5 +1,5 @@
 import ComponentExample from "@/components/content/documentantion/ComponentExample";
-import TypographyHeadersExample, { typography_headers_example } from "./typography-headers-examples";
+import TypographyHeadersExample, { TypographyAlternativeExample, typography_alternative_example, typography_headers_example } from "./typography-headers-examples";
 
 export default function Typography() {
   return (
@@ -8,7 +8,7 @@ export default function Typography() {
         <div id="anchor--foundation-typography--figure" />
 
         <div className="markdown prose w-full break-words dark:prose-invert light">
-          <h2>Typography</h2>
+          <h1>Typography</h1>
           <p>
             StepOne provides a comprehensive set of typography styles that you can use to enhance the readability and visual appeal of your website&apos;s content. Whether you need headers,
             paragraphs, or other text elements, StepOne has got you covered. Let&apos;s explore the various typography styles and how to use them effectively.
@@ -42,7 +42,7 @@ export default function Typography() {
             </li>
           </ul>
 
-          <ComponentExample codeExample={[{ name: "simple-form.tsx", code: typography_headers_example }]} componentExample={<TypographyHeadersExample />} />
+          <ComponentExample language="xml" codeExample={[{ name: "simple-form.tsx", code: typography_headers_example }]} componentExample={<TypographyHeadersExample />} />
 
           <h3>Inline styles</h3>
 
@@ -172,27 +172,11 @@ export default function Typography() {
             explore the StepOne documentation for more detailed information and additional typography options.
           </p>
         </div>
-        <h1 className="sbdocs sbdocs-h1 css-1d8ls76">Typography</h1>
 
-        <p className="figure">Figure Class</p>
-        <p className="hero">Hero Class</p>
-        <h1 className="">Heading 1</h1>
-        <p className="h1">Heading 1</p>
-        <h2 className="">Heading 2</h2>
-        <p className="h2">Heading 2</p>
-        <h3 className="">Heading 3</h3>
-        <p className="h3">Heading 3</p>
+        <h3>Other types of typhography</h3>
+        <p>StepOne also includes certain classes as helpers for alternative types of typography.</p>
 
-        <h4 className="">Heading 4</h4>
-        <p className="h4">Heading 4</p>
-        <p className="subtitle">Subtitle Class</p>
-        <p className="small-title">Small title Class</p>
-        <p className="caption">Caption</p>
-        <p className="tag">Tag Text</p>
-        <p className="large">Body large</p>
-        <p className="base">Body base</p>
-        <p className="medium">Body medium</p>
-        <p className="small">Body small</p>
+        <ComponentExample language="xml" codeExample={[{ name: "simple-form.tsx", code: typography_alternative_example }]} componentExample={<TypographyAlternativeExample />} />
       </div>
     </>
   );

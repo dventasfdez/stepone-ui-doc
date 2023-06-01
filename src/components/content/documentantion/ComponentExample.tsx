@@ -4,7 +4,7 @@ import ContentSwitcher, { ContentSwitcherItem } from "stepone-ui/contentSwitcher
 import Tabs, { TabItem } from "stepone-ui/tabs";
 import React, { ReactElement, useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { vs } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { vs, vs2015 } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { addNotification } from "@/components/shared/notifications/notifications-service";
 
 interface CodeExample {
@@ -16,6 +16,7 @@ interface CodeExample {
 interface ComponentExampleProps {
   componentExample: any;
   codeExample: CodeExample[];
+  language?: string;
 }
 
 const ComponentExample: React.FC<ComponentExampleProps> = (props): ReactElement => {
@@ -28,7 +29,7 @@ const ComponentExample: React.FC<ComponentExampleProps> = (props): ReactElement 
   return (
     <ContentSwitcher className="mb5 component-example" defaultActiveItem="example">
       <ContentSwitcherItem id="example" title="Example">
-        {componentExample}
+        <div className="p3">{componentExample}</div>
       </ContentSwitcherItem>
       <ContentSwitcherItem id="code" title="Code">
         <Card>
@@ -37,14 +38,14 @@ const ComponentExample: React.FC<ComponentExampleProps> = (props): ReactElement 
               <Tabs defaultActiveTab="0" onChangeTab={(tab) => setSelectedTab(tab)}>
                 {codeExample?.map((ce, index) => (
                   <TabItem id={index?.toString()} key={ce?.name} title={ce?.name}>
-                    <SyntaxHighlighter language={ce?.language || "typecript"} style={vs}>
+                    <SyntaxHighlighter language={ce?.language || "typecript"} style={vs2015}>
                       {ce?.code?.trim()}
                     </SyntaxHighlighter>
                   </TabItem>
                 ))}
               </Tabs>
             ) : (
-              <SyntaxHighlighter language={codeExample?.[parseInt(selectedTab)]?.language || "typecript"} style={vs}>
+              <SyntaxHighlighter language={codeExample?.[parseInt(selectedTab)]?.language || "typecript"} style={vs2015}>
                 {codeExample?.[parseInt(selectedTab)]?.code?.trim()}
               </SyntaxHighlighter>
             )}
