@@ -72,23 +72,7 @@ export default function Sidebar() {
             <p className="caption mb2">StepOne Components</p>
             <ul className="mb3">
               <li className="small-title guidline-option">
-                <Link href="#">Calendars</Link>
-              </li>
-              <li className="small-title guidline-option">
-                <Link href="#">Accordion</Link>
-              </li>
-              <li className="small-title guidline-option">
-                <Link href="#">ContentSwitcher</Link>
-              </li>
-
-              <li className="small-title guidline-option">
-                <Link href="#">FileUploader</Link>
-              </li>
-              <li className="small-title guidline-option">
-                <Link href="#">Cards</Link>
-              </li>
-              <li className="small-title guidline-option">
-                <Link href="#">Loader</Link>
+                <Link href="/documentation/accordions">Accordion</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">Avatar</Link>
@@ -97,43 +81,37 @@ export default function Sidebar() {
                 <Link href="#">Breadcrumbs</Link>
               </li>
               <li className="small-title guidline-option">
+                <Link href="#">Calendars</Link>
+              </li>
+              <li className="small-title guidline-option">
+                <Link href="#">Cards</Link>
+              </li>
+              <li className="small-title guidline-option">
                 <Link href="#">Carousel</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">Chips</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">DropdownMenu</Link>
+                <Link href="#">ContentSwitcher</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">Drawer</Link>
               </li>
               <li className="small-title guidline-option">
+                <Link href="#">DropdownMenu</Link>
+              </li>
+              <li className="small-title guidline-option">
+                <Link href="#">FileUploader</Link>
+              </li>
+              <li className="small-title guidline-option">
+                <Link href="#">Link</Link>
+              </li>
+              <li className="small-title guidline-option">
+                <Link href="#">Loader</Link>
+              </li>
+              <li className="small-title guidline-option">
                 <Link href="#">Modal</Link>
-              </li>
-              <li className="small-title guidline-option">
-                <Link href="#">Progress Bar</Link>
-              </li>
-              <li className="small-title guidline-option">
-                <Link href="#">Paginator</Link>
-              </li>
-              <li className="small-title guidline-option">
-                <Link href="#">Stepper</Link>
-              </li>
-              <li className="small-title guidline-option">
-                <Link href="#">Toggle</Link>
-              </li>
-              <li className="small-title guidline-option">
-                <Link href="#">Tooltip</Link>
-              </li>
-              <li className="small-title guidline-option">
-                <Link href="#">Tabs</Link>
-              </li>
-              <li className="small-title guidline-option">
-                <Link href="#">Tree View</Link>
-              </li>
-              <li className="small-title guidline-option">
-                <Link href="#">Video Preview</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">Notifications</Link>
@@ -142,13 +120,16 @@ export default function Sidebar() {
                 <Link href="#">OverflowMenu</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Link</Link>
+                <Link href="#">Paginator</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Rating</Link>
+                <Link href="#">Progress Bar</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">Quote</Link>
+              </li>
+              <li className="small-title guidline-option">
+                <Link href="#">Rating</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">Searchbox</Link>
@@ -158,6 +139,25 @@ export default function Sidebar() {
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">Status tag</Link>
+              </li>
+              <li className="small-title guidline-option">
+                <Link href="#">Stepper</Link>
+              </li>
+              <li className="small-title guidline-option">
+                <Link href="#">Tabs</Link>
+              </li>
+              <li className="small-title guidline-option">
+                <Link href="#">Toggle</Link>
+              </li>
+              <li className="small-title guidline-option">
+                <Link href="#">Tooltip</Link>
+              </li>
+
+              <li className="small-title guidline-option">
+                <Link href="#">Tree View</Link>
+              </li>
+              <li className="small-title guidline-option">
+                <Link href="#">Video Preview</Link>
               </li>
             </ul>
           </div>
