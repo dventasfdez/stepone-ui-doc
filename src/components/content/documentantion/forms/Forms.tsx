@@ -112,7 +112,7 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
                     <a href="#nesting-forms">Nesting forms and modals inside a form</a>
                   </li>
                   <li>
-                    <a href="#button-types">Not adding "type"="button" to a button</a>
+                    <a href="#button-types">Not adding &apos;type &apos;= &apos;button &apos; to a button</a>
                   </li>
                 </ul>
               </li>
@@ -187,8 +187,8 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
       <div className="mb6">
         <p>The Form component allows you to simply validate, serialize, automatically set values to the inputs inside it.</p>
         <p>
-          The form component uses React context in order to work and for the form to "be aware" of the inputs inside it. Then it generates a contexts, then when the inputs detect that context and get
-          listed at the form level, so the form will be able to change the state on them.{" "}
+          The form component uses React context in order to work and for the form to &apos;be aware&apos; of the inputs inside it. Then it generates a contexts, then when the inputs detect that context and get listed at the form level, so
+          the form will be able to change the state on them.
         </p>
         <p>This way the values passed to a form as a Javascript object can be applied to the fields automatically, but also run the validatios and set them to valid/invalid.</p>
       </div>
@@ -205,12 +205,12 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
             </CardHeader>
             <CardBody>
               <p>
-                It's a form on it's simpliest sape, just a form with some inputs that when clicking the submit button serialices its values, check in the code the function "handleSubmit" to see how it
-                deals with the form submit output
+                It's a form on it's simpliest sape, just a form with some inputs that when clicking the submit button serialices its values, check in the code the function &apos;handleSubmit&apos; to see how it deals with the form submit
+                output
               </p>
               <Notification show info className="static-notification mb4">
                 <NotificationHeader>Info</NotificationHeader>
-                <NotificationBody>Check the "onSubmit" property and the handleSubmit function passed in the example</NotificationBody>
+                <NotificationBody>Check the &apos; onSubmit&apos; property and the handleSubmit function passed in the example</NotificationBody>
               </Notification>
               <ComponentExample codeExample={[{ name: "simple-form.tsx", code: simple_result }]} componentExample={<SimpleForm />} />
             </CardBody>
@@ -232,7 +232,7 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
               <Notification show info className="static-notification mb4">
                 <NotificationBody>See also the nested javascript in the values pass to the form and in the output of the serialization (in the console)</NotificationBody>
               </Notification>
-              <p>And binds any change in any input using the prop "onChange" of the form.</p>
+              <p>And binds any change in any input using the prop &apos;onChange&apos; of the form.</p>
 
               <ComponentExample codeExample={[{ name: "form-example-with-validations.tsx", code: form_validations_example }]} componentExample={<FormExampleWithValidations />} />
             </CardBody>
@@ -243,9 +243,7 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
       <div id="validations">
         <h4>Validations</h4>
         <hr className="mb4" />
-        <p>
-          The validations are functions that using the value, the form context or the actual input component, apply some logic and return an error or "undefined" if the validation passes succesfully .
-        </p>
+        <p>The validations are functions that using the value, the form context or the actual input component, apply some logic and return an error or "undefined" if the validation passes succesfully .</p>
 
         <div id="default-validations" className="mb4">
           <h5>
@@ -265,10 +263,7 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
           <h5>
             <strong>Custom validations</strong>
           </h5>
-          <p>
-            You can also create your own custom validation functions. As parameters of the validations by default you can receive: value of the input, context of the input and the input component it
-            self.
-          </p>
+          <p>You can also create your own custom validation functions. As parameters of the validations by default you can receive: value of the input, context of the input and the input component it self.</p>
           <SyntaxHighlighter style={vs} language={"typecript"}>{`const customValidationFunction = (value: any, _context: any, inputComponent: any) => {
   if (value !== "Good morning") {
     return "Value is wrong, needs to be 'Good morning'";
@@ -462,10 +457,7 @@ const FormGuideline: React.FC<any> = (): ReactElement => {
 
           <p>What you can do is add a modal that renders a form outside this form (usually in the root of the DOM), but for react it would be still inside the same context.</p>
 
-          <p>
-            The problem in reality would be that if the modal contains a submit button, even if outside the form, as for react virtualDom is inside the other, would trigger the submit in both forms,
-            the parent and the modal
-          </p>
+          <p>The problem in reality would be that if the modal contains a submit button, even if outside the form, as for react virtualDom is inside the other, would trigger the submit in both forms, the parent and the modal</p>
 
           <p>You need to replace the submit button of the modal by a normal button that triggers the submit.</p>
 

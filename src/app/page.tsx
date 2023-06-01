@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <img src="https://icy-hill-03244c403.1.azurestaticapps.net/d0ea0911c133fd5ce025.jpeg" alt="hero image" className="hero-background  " />
       </div>
-      <div style={{ padding: "60px 144px" }} className="flex">
+      {/* <div style={{ padding: "60px 144px" }} className="flex">
         <div className="g-item_4 ">
           <div className="card_figure  m2">
             <div id="figure card" className="card-figure ">
@@ -94,7 +94,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="clearfix"></div>
     </>

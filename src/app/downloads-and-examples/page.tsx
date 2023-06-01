@@ -154,7 +154,7 @@ export default function DownloadsAndExamples() {
                   </a>
                 </p>
                 <ul>
-                  <li>An example illustrating a basic two-column layout structure using StepOne's grid system.</li>
+                  <li>An example illustrating a basic two-column layout structure using StepOne&apos;s grid system.</li>
                 </ul>
               </li>
               <li>
@@ -164,7 +164,7 @@ export default function DownloadsAndExamples() {
                   </a>
                 </p>
                 <ul>
-                  <li>A sample implementation of a card grid layout using StepOne's grid system and card component.</li>
+                  <li>A sample implementation of a card grid layout using StepOne&apos;s grid system and card component.</li>
                 </ul>
               </li>
             </ul>
@@ -177,7 +177,7 @@ export default function DownloadsAndExamples() {
                   </a>
                 </p>
                 <ul>
-                  <li>An example demonstrating the styling of a registration form using StepOne's form components.</li>
+                  <li>An example demonstrating the styling of a registration form using StepOne&apos;s form components.</li>
                 </ul>
               </li>
               <li>
@@ -187,14 +187,13 @@ export default function DownloadsAndExamples() {
                   </a>
                 </p>
                 <ul>
-                  <li>A sample implementation of a login form with StepOne's form styling.</li>
+                  <li>A sample implementation of a login form with StepOne&apos;s form styling.</li>
                 </ul>
               </li>
             </ul>
             <p>
-              These downloads and examples are designed to help you quickly get started with StepOne and showcase its capabilities. Feel free to download the library, explore the examples, and
-              customize them to fit your project's requirements. If you have any questions or need further assistance, refer to the StepOne documentation or reach out to our support team. Happy
-              coding!
+              These downloads and examples are designed to help you quickly get started with StepOne and showcase its capabilities. Feel free to download the library, explore the examples, and customize them to fit your project&apos;s
+              requirements. If you have any questions or need further assistance, refer to the StepOne documentation or reach out to our support team. Happy coding!
             </p>
           </div>
           <div className="clearfix"></div>
