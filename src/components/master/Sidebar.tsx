@@ -75,7 +75,7 @@ export default function Sidebar() {
                 <Link href="/documentation/accordions">Accordion</Link>
               </li>
               <li className="small-title guidline-option">
-                <Link href="#">Avatar</Link>
+                <Link href="/documentation/avatar">Avatar</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="#">Breadcrumbs</Link>
