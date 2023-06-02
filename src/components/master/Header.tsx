@@ -2,26 +2,27 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Header, { HeaderItem, HeaderLogo } from "../_overrides/header";
 
-export default function Header() {
+export default function _Header() {
   const pathname = usePathname();
 
   return (
-    <div className="header">
-      <div className="header-top"></div>
-      <div className="header-bottom">
-        <Link href="/">
-          <Image className={`header-logo`} src="/UST-logo.svg" alt="Logo" width={48} height={52} priority />
-        </Link>
-        <div className="header-items">
-          <Link href="/documentation" className={`header-item ${pathname.startsWith("/documentation") ? "active" : ""}`}>
-            Documentation
-          </Link>
-          <Link href="/downloads-and-examples" className={`header-item ${pathname.startsWith("/downloads-and-examples") ? "active" : ""}`}>
-            Downloads and examples
-          </Link>
-        </div>
-      </div>
-    </div>
+    <>
+      <Header className="tag-ds ">
+        <HeaderLogo>
+          <img alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Adecco_logo.svg/1200px-Adecco_logo.svg.png" />
+        </HeaderLogo>
+
+        <HeaderItem href="/documentation" selected={pathname.startsWith("/documentation") ? true : false}>
+          Documentation
+        </HeaderItem>
+        <HeaderItem href="/downloads-and-examples" selected={pathname.startsWith("/downloads-and-examples") ? true : false}>
+          Downloads and examples
+        </HeaderItem>
+
+        {/* <HeaderContact href="#">Contact</HeaderContact>   */}
+      </Header>
+    </>
   );
 }

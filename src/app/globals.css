@@ -1,12 +1,12 @@
 body {
   margin: 0;
 }
-
-.drawer-content {
-  max-width: calc(100% - 328px);
-  width: 100%;
+@media (min-width: 673px) {
+  .drawer-content {
+    max-width: calc(100% - 328px);
+    width: 100%;
+  }
 }
-
 .static-notification {
   display: block !important;
   position: relative !important;
@@ -14,7 +14,7 @@ body {
   max-width: none !important;
   left: 0 !important;
   top: 0 !important;
-  z-index: 0;
+  z-index: 0 !important;
 }
 .stepone-ui .header-item {
   height: 80px;
@@ -64,4 +64,61 @@ pre {
 .stepone-ui ul li ul {
   margin-top: calc(var(--body-medium-line-height) / 2);
   margin-bottom: calc(var(--body-medium-line-height) / 2);
+}
+
+.drawer-mobile-toggle {
+  position: fixed;
+  right: 0;
+  margin: calc(var(--unit) * 2);
+}
+@media (max-width: 672px) {
+  .stepone-ui .header-items {
+    display: flex;
+    height: 100%;
+    padding: 0;
+    gap: 48px;
+    margin-right: 56px;
+  }
+  .stepone-ui .header-items {
+    display: block;
+    height: auto;
+    margin: 0;
+    padding: 16px;
+    border-bottom: 1px solid var(--borders-dividers-01);
+    background: #fff;
+  }
+  .stepone-ui li.tree-element {
+    cursor: pointer;
+    font-family: var(--body-medium-font-family);
+    font-weight: var(--body-medium-font-weight);
+    line-height: var(--body-medium-line-height);
+    font-size: var(--body-medium-font-size);
+    letter-spacing: var(--body-medium-letter-spacing);
+    text-transform: var(--body-medium-text-case);
+    -webkit-text-decoration: var(--body-medium-text-decoration);
+    text-decoration: var(--body-medium-text-decoration);
+    border-left: 2px solid rgba(0, 0, 0, 0);
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .stepone-ui ul.header-items li.tree-element {
+    padding: 0;
+    font-family: var(--h4-mobile-font-family);
+    font-weight: var(--h4-mobile-font-weight);
+    line-height: var(--h4-mobile-line-height);
+    font-size: var(--h4-mobile-font-size);
+    letter-spacing: var(--h4-mobile-letter-spacing);
+    text-transform: var(--h4-mobile-text-case);
+    -webkit-text-decoration: var(--h4-mobile-text-decoration);
+    text-decoration: var(--h4-mobile-text-decoration);
+  }
+  .stepone-ui .header-item {
+    height: auto;
+    padding: var(--unit);
+  }
+  .stepone-ui .active.header-item:after {
+    display: none;
+  }
 }
