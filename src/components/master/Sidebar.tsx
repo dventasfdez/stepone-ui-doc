@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Drawer, { DrawerBody, DrawerHeader } from "stepone-ui/drawer";
 
-export default function Sidebar({ children }) {
+export default function Sidebar({ children }: { children: React.ReactNode }) {
   const { isMobile } = useDevice();
   const [showContent, setShowContent] = useState(isMobile ? false : true);
 

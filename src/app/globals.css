@@ -7,6 +7,12 @@ body {
     width: 100%;
   }
 }
+@media (max-width: 672px) {
+  .drawer-content {
+    max-width: 100vw;
+    width: 100%;
+  }
+}
 .static-notification {
   display: block !important;
   position: relative !important;

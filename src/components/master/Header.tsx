@@ -11,7 +11,7 @@ export default function _Header() {
     <>
       <Header className="tag-ds ">
         <HeaderLogo>
-          <img alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Adecco_logo.svg/1200px-Adecco_logo.svg.png" />
+          <Image className="header-logo" src="/UST-logo.svg" alt="Logo" width={48} height={52} priority />
         </HeaderLogo>
 
         <HeaderItem href="/documentation" selected={pathname.startsWith("/documentation") ? true : false}>
