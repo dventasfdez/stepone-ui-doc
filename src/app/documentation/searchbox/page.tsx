@@ -8,7 +8,7 @@ import { DefaultSearchbox, FilledSearchbox, SmallSearchbox, default_searchbox, d
 
 const SearchboxGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Searchbox</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>The Searchbox is a styled component that allows users to search and filter data.</NotificationBody>
@@ -35,7 +35,7 @@ const SearchboxGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Example of disabled searchbox by adding disabled prop.</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "disabled_searchbox.tsx", code: disabled_searchbox }]} componentExample={<DisabledSearchInput />} /> */}
-    </NoSSR>
+    </>
   );
 };
 

@@ -8,7 +8,7 @@ import { TabsHorizontal, TabsVertical, TabsDisabled, TabsCollapsed, tabs_props, 
 
 const TabsGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Tabs</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>Tabs is a styled component that toogles the visible information. This holds the tab content to show.</NotificationBody>
@@ -47,7 +47,7 @@ const TabsGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>This state can be used by implementing Tabs component with TabItem childs with disabled attribute:</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "tabs_disabled.tsx", code: tabs_disabled }]} componentExample={<TabsDisabled />} />
-    </NoSSR>
+    </>
   );
 };
 

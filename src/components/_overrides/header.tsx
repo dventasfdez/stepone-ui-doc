@@ -2,7 +2,8 @@ import React from "react";
 import HeaderLogo from "./headerLogo";
 import HeaderItem from "./headerItem";
 import Dropdown, { DropdownButton, DropdownMenu } from "stepone-ui/dropdown";
-import { useDevice } from "../../hooks/useDevice/useDevice";
+import { useDevice } from "@/components/_overrides/useDevice/useDevice";
+
 export { default as HeaderLogo } from "./headerLogo";
 export { default as HeaderItem } from "./headerItem";
 export interface IHeaderLanguage {

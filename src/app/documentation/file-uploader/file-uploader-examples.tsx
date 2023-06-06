@@ -28,20 +28,20 @@ const useFileUploader = () => {
   return { file, handleUploadSingle };
 };
 
-const getInitialFiles = () => {
-  const str = JSON.stringify({ name: "test" });
-  const blob = new Blob([str]);
-  const file1 = new File([blob], "values1.json", {
-    type: "application/JSON",
-  });
-  const file2 = new File([blob], "values2.json", {
-    type: "application/JSON",
-  });
-  return [
-    { loading: false, error: "Error message", file: file1 },
-    { loading: false, error: "", file: file2 },
-  ];
-};
+// const getInitialFiles = () => {
+//   const str = JSON.stringify({ name: "test" });
+//   const blob = new Blob([str]);
+//   const file1 = new File([blob], "values1.json", {
+//     type: "application/JSON",
+//   });
+//   const file2 = new File([blob], "values2.json", {
+//     type: "application/JSON",
+//   });
+//   return [
+//     { loading: false, error: "Error message", file: file1 },
+//     { loading: false, error: "", file: file2 },
+//   ];
+// };
 
 const createNewFiles = (files: File[]): IFile[] => {
   const newFiles: IFile[] = [];
@@ -145,7 +145,7 @@ export default FullWidthFileUploader
 
 // MULTIPLE FILEUPLOADER COMPONENT EXAMPLE
 export const MultipleFileUploader: React.FC<any> = (): ReactElement => {
-  const [files, setFiles] = useState<any>(getInitialFiles());
+  const [files, setFiles] = useState<any>([]);
   const handleUploadMultiple = (uploadedFiles?: File[]) => {
     if (uploadedFiles) {
       const newFiles = createNewFiles(uploadedFiles);
@@ -190,7 +190,7 @@ export default MultipleFileUploader
 
 // MULTIPLE DRAG AND DROP FILEUPLOADER COMPONENT EXAMPLE
 export const MultipleDragFileUploader: React.FC<any> = (): ReactElement => {
-  const [files, setFiles] = useState<any>(getInitialFiles());
+  const [files, setFiles] = useState<any>([]);
   const handleUpload = (dragedFiles?: File[]) => {
     if (dragedFiles) {
       const newDragedFiles = createNewFiles(dragedFiles);

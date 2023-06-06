@@ -1,10 +1,8 @@
 "use client";
-import { useDevice } from "@/hooks/useDevice/useDevice";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
-import Drawer, { DrawerBody, DrawerHeader } from "stepone-ui/drawer";
-
+import Drawer from "stepone-ui/drawer";
+import { useDevice } from "@/components/_overrides/useDevice/useDevice";
 export default function Sidebar({ children }: { children: React.ReactNode }) {
   const { isMobile } = useDevice();
   const [showContent, setShowContent] = useState(isMobile ? false : true);

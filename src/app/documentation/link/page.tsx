@@ -19,7 +19,7 @@ import {
 
 const LinkGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Link</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>Link style refers to the visual presentation of a hyperlink on the application.</NotificationBody>
@@ -51,7 +51,7 @@ const LinkGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Example of a small link with right icon.</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "small_icon_right_link.tsx", code: small_icon_right_link }]} componentExample={<SmallIconRightLink />} />
-    </NoSSR>
+    </>
   );
 };
 

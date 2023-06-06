@@ -480,7 +480,7 @@ import { toLiteral } from "../../../../helper/locale-utils";
 import { Form, TextInput } from "../../../shared/forms";
 import { addNotification } from "../../../shared/notifications/notifications-service";
 import * as Api from "../../../../api";
-import Modal, { ModalBody, ModalFooter, ModalHeader } from "@adeccoux//modal";
+import Modal, { ModalBody, ModalFooter, ModalHeader } from "@stepone-ui/modal";
 import { email, phone, required } from "../../../shared/forms/utilities/validations";
 
 const UserModal: React.FC<any> = (props): ReactElement => {

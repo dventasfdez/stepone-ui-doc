@@ -17,7 +17,7 @@ import {
 import NoSSR from "@/components/shared/notifications/noSSR/noSSR";
 const CarouselGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Carousel</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>The Carousel is a component which its purpose is to separate either blocks of text, images or card.</NotificationBody>
@@ -58,7 +58,7 @@ const CarouselGuideline: React.FC<any> = (): ReactElement => {
         ]}
         componentExample={<MaxElementCarousel />}
       />
-    </NoSSR>
+    </>
   );
 };
 

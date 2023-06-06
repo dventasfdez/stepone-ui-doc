@@ -22,7 +22,7 @@ import {
 
 const ToggleGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Toggle</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>Used to toggle on/off desired feature.</NotificationBody>
@@ -63,7 +63,7 @@ const ToggleGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Toggle component have the following states</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "toggle_disabled.tsx", code: toggle_disabled }]} componentExample={<ToggleDisabled />} />
-    </NoSSR>
+    </>
   );
 };
 

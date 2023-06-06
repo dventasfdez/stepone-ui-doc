@@ -20,7 +20,7 @@ import {
 
 const NotificationsGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Notifications</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>The Notifications is a styled component used to provide feedback such as success, warning, error, etc..</NotificationBody>
@@ -53,7 +53,7 @@ const NotificationsGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Example of a warning notification.</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "warning_notificaton.tsx", code: warning_notificaton }]} componentExample={<WarningNotification />} />
-    </NoSSR>
+    </>
   );
 };
 

@@ -21,7 +21,7 @@ import {
 
 const DropdownMenuGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>DropdownMenu</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>The DropdownMenu component renders a dropdown menu list when they click on a button.</NotificationBody>
@@ -84,7 +84,7 @@ const DropdownMenuGuideline: React.FC<any> = (): ReactElement => {
         ]}
         componentExample={<DropdownMenuRadio />}
       />
-    </NoSSR>
+    </>
   );
 };
 

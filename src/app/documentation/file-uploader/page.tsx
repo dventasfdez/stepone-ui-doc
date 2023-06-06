@@ -27,7 +27,7 @@ import {
 
 const FileUploaderGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>FileUploader</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>FileUploader component is a styled component. This component has the following props to control its different states and variants.</NotificationBody>
@@ -80,7 +80,7 @@ const FileUploaderGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Disabled Drag and Drop FileUploader example by adding disabled props</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "disabled_multiple_file_uploader.tsx", code: disabled_drag_file_uploader }]} componentExample={<DisabledDragFileUploader />} />
-    </NoSSR>
+    </>
   );
 };
 

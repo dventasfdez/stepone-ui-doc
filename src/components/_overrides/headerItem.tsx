@@ -24,17 +24,7 @@ export interface IHeaderItemProps {
 
 const HeaderItem: React.FC<IHeaderItemProps> = (props) => {
   const { className, children, id, selected, onClick, href, options, disabled, optionsDivider, ...rest } = props;
-  const [showOptions, setShowOptions] = useState(false);
-  const buttonRef = useRef<HTMLButtonElement>(null);
-  const onClickItem = (e?: React.MouseEvent) => {
-    if (options) {
-      if (rest && rest["data-mobile"]) e?.stopPropagation();
-      setShowOptions(!showOptions);
-    }
-    if (typeof onClick === "function") {
-      onClick();
-    }
-  };
+
   const renderItem = () => {
     return (
       <Link className={`header-item ${selected ? "active" : ""} ${className ?? ""}`} href={href ?? ""} {...rest}>

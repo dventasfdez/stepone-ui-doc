@@ -14,7 +14,7 @@ import FormExampleWithValidations, { form_validations_example } from "./examples
 import NoSSR from "@/components/shared/notifications/noSSR/noSSR";
 const FormGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <div>
         <h1 className="mb4">Forms</h1>
         <div className=" mb4">
@@ -480,7 +480,7 @@ import { toLiteral } from "../../../../helper/locale-utils";
 import { Form, TextInput } from "../../../shared/forms";
 import { addNotification } from "../../../shared/notifications/notifications-service";
 import * as Api from "../../../../api";
-import Modal, { ModalBody, ModalFooter, ModalHeader } from "@adeccoux//modal";
+import Modal, { ModalBody, ModalFooter, ModalHeader } from "@stepone-ui/modal";
 import { email, phone, required } from "../../../shared/forms/utilities/validations";
 
 const UserModal: React.FC<any> = (props): ReactElement => {
@@ -532,7 +532,7 @@ export default UserModal;`}</SyntaxHighlighter>
           </div>
         </div>
       </div>
-    </NoSSR>
+    </>
   );
 };
 
