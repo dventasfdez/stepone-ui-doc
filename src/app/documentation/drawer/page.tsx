@@ -8,7 +8,7 @@ import ComponentPropsTable from "@/components/content/documentantion/component-p
 
 const DrawerGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Drawer</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>
@@ -30,7 +30,7 @@ const DrawerGuideline: React.FC<any> = (): ReactElement => {
         </NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "drawer_close_button.tsx", code: drawer_close_button }]} componentExample={<DrawerCloseButton />} />
-    </NoSSR>
+    </>
   );
 };
 

@@ -20,7 +20,7 @@ import {
 
 const PaginatorGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Paginator</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>Used for pagination.</NotificationBody>
@@ -52,7 +52,7 @@ const PaginatorGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>All</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "paginator_truncated_right.tsx", code: paginator_truncated_all }]} componentExample={<PaginatorTruncatedAll />} />
-    </NoSSR>
+    </>
   );
 };
 

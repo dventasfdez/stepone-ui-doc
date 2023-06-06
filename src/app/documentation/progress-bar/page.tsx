@@ -20,7 +20,7 @@ import {
 
 const ProgressBarGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Progress Bar</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>
@@ -51,7 +51,7 @@ const ProgressBarGuideline: React.FC<any> = (): ReactElement => {
         <NotificationHeader>Progress Bar without steps</NotificationHeader>
       </Notification>
       <ComponentExample codeExample={[{ name: "progress_bar_no_steps.tsx", code: progress_bar_without_steps }]} componentExample={<ProgressBarWithoutSteps />} />
-    </NoSSR>
+    </>
   );
 };
 

@@ -19,7 +19,7 @@ import {
 
 const StatusTagGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Status tag</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>
@@ -54,7 +54,7 @@ const StatusTagGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Example of error status tag by adding .status-tag_error or .status-tag error classes.</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "error_status_tag.tsx", code: error_status_tag }]} componentExample={<ErrorStatusTag />} />
-    </NoSSR>
+    </>
   );
 };
 

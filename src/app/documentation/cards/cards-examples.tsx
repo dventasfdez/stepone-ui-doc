@@ -18,7 +18,7 @@ const data_mock: any = {
   subtitle: "And this is a subtitle",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus illum nam est necessitatibus voluptatibus quam quae iusto ea consequuntur dolores saepe rem porro quasi, quis optio dolor consequatur perferendis voluptates temporibus corrupti veritatis error ipsa. Perspiciatis et voluptate totam magni vel magnam debitis est rem quisquam, ipsum, placeat culpa?",
-  email: "adecco@adecco.com",
+  email: "stepone@stepone.com",
   phone: "000 000 000",
   linkedin: "https://www.linkedin.com/",
   gmail: "https://www.gmail.com/",
@@ -99,7 +99,7 @@ export const data_mock: any = {
     subtitle: "And this is a subtitle",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus illum nam est necessitatibus voluptatibus quam quae iusto ea consequuntur dolores saepe rem porro quasi, quis optio dolor consequatur perferendis voluptates temporibus corrupti veritatis error ipsa. Perspiciatis et voluptate totam magni vel magnam debitis est rem quisquam, ipsum, placeat culpa?",
-    email: "adecco@adecco.com",
+    email: "stepone@stepone.com",
     phone: "000 000 000",
     linkedin: "https://www.linkedin.com/",
     gmail: "https://www.gmail.com/",

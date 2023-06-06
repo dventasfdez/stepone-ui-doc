@@ -7,7 +7,7 @@ import { ActiveChips, Chips, ColouredChips, DisabledChips, active_chips, chips, 
 
 const ChipsGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Chips</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>The chips component is similar to a button and therefore has the same interaction methods as it.</NotificationBody>
@@ -34,7 +34,7 @@ const ChipsGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Chips active example by adding active class.</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "active_chips.tsx", code: active_chips }]} componentExample={<ActiveChips />} />
-    </NoSSR>
+    </>
   );
 };
 

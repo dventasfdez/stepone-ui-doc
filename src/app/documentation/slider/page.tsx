@@ -22,7 +22,7 @@ import {
 
 const SliderGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Slider</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>The Slider is a component used for picking a value between a bound.</NotificationBody>
@@ -60,7 +60,7 @@ const SliderGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Complex double slider example by adding disabled props.</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "disabled_double_slider.tsx", code: disabled_double_slider }]} componentExample={<DisabledDoubleSlider />} />
-    </NoSSR>
+    </>
   );
 };
 

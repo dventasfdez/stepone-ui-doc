@@ -24,7 +24,7 @@ import ComponentExample from "@/components/content/documentantion/ComponentExamp
 import NoSSR from "@/components/shared/notifications/noSSR/noSSR";
 const AvatarGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <div>
         <h3>Avatar</h3>
         <Notification show read className="static-notification mb6">
@@ -69,7 +69,7 @@ const AvatarGuideline: React.FC<any> = (): ReactElement => {
         </Notification>
         <ComponentExample codeExample={[{ name: "badge_avatar.tsx", code: badge_avatar }]} componentExample={<BadgeAvatar />} />
       </div>
-    </NoSSR>
+    </>
   );
 };
 

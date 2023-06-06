@@ -1,0 +1,14 @@
+.mobile-display {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .stepone-ui .mobile-padding-standar {
+    padding: 48px 32px 32px !important;
+  }
+  .stepone-ui .mobile-margin-standar {
+    margin: 48px 32px 32px !important;
+  }
+  .mobile-display {
+    display: block;
+  }
+}
