@@ -1,8 +1,3 @@
-import FormGuideline from "@/components/content/documentantion/forms/Forms";
-import Sidebar from "@/components/master/Sidebar";
-import NotificationsContainer from "@/components/shared/notifications/notifications-container";
-import Link from "next/link";
-
 export default function DownloadsAndExamples() {
   return (
     <>

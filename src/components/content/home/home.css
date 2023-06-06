@@ -1,0 +1,64 @@
+@media (min-width: 1025px) {
+  .stepone-ui .section-1 .hero-background {
+    max-width: calc(100% - 1128px);
+  }
+}
+
+@media (max-width: 1820px) {
+  .section-5 .figures-container {
+    padding: 20px !important;
+  }
+  .section-5 .figures-container .card_figure {
+    min-height: 290px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .stepone-ui .home .hero-container {
+    height: auto !important;
+  }
+  .stepone-ui .home .hero-content {
+    color: var(--text-01) !important;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    display: block !important;
+  }
+  .stepone-ui .home .card {
+    max-width: calc(100% - 40px);
+  }
+  .stepone-ui .home .hero-content,
+  .stepone-ui .home .hero-content .hero-body,
+  .stepone-ui .home .hero-content_search .hero-body {
+    color: var(--text-01) !important;
+    display: block !important;
+  }
+  .stepone-ui .home .section-1 .hero-header {
+    padding: 16px;
+  }
+  .stepone-ui .home .section-1 .hero-content {
+    color: var(--text-01);
+    padding: 48px 0px 0px;
+  }
+
+  .stepone-ui .home .hero-background {
+    width: 100% !important;
+  }
+  .stepone-ui .home .section-1 {
+    height: auto;
+  }
+  .stepone-ui .home .section-1 .flex,
+  .stepone-ui .home .section-2 .flex,
+  .stepone-ui .home .section-3 .flex,
+  .stepone-ui .home .section-4 .flex,
+  .stepone-ui .home .section-5 .flex {
+    display: block !important;
+  }
+  .home .team-component {
+    background: #fff;
+    padding: 24px;
+    margin-top: 24px;
+  }
+  .home .team-component .mt10 {
+    margin-top: 0 !important;
+  }
+}
