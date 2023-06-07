@@ -8,7 +8,7 @@ import { TooltipComponent, tooltip_props, tooltip } from "./tooltip-examples";
 
 const TooltipGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Tooltip</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>
@@ -56,7 +56,7 @@ const TooltipGuideline: React.FC<any> = (): ReactElement => {
       <div style={{ position: "relative", padding: "10px 0" }}>
         <div className="tooltip left">I am left</div>
       </div>
-    </NoSSR>
+    </>
   );
 };
 

@@ -19,7 +19,7 @@ import {
 
 const TreeViewGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Tree</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>
@@ -61,7 +61,7 @@ const TreeViewGuideline: React.FC<any> = (): ReactElement => {
         <NotificationHeader>Disabled Tree view</NotificationHeader>
       </Notification>
       <ComponentExample codeExample={[{ name: "tree_disabled.tsx", code: tree_disabled }]} componentExample={<TreeDisabledComponent />} />
-    </NoSSR>
+    </>
   );
 };
 

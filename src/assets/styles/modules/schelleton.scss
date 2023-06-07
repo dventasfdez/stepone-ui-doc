@@ -1,0 +1,24 @@
+.stepone-ui .drawer-wrapper {
+  height: auto;
+}
+@media (min-width: 1025px) {
+  .drawer-content {
+    max-width: calc(100% - 328px);
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .drawer-content {
+    max-width: 100vw;
+    width: 100%;
+  }
+  .stepone-ui .drawer-wrapper {
+    max-height: 100vh;
+    overflow: auto !important;
+  }
+}
+.drawer-mobile-toggle {
+  position: fixed;
+  right: 0;
+  margin: calc(var(--unit) * 2);
+}

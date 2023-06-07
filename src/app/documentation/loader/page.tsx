@@ -24,7 +24,7 @@ import {
 
 const LoaderGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Loader</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>Loader is a styled component use it as a placeholder while we wait the content to be loaded.</NotificationBody>
@@ -67,7 +67,7 @@ const LoaderGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Example of a Loader with success status by adding success props.</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "success_loader.tsx", code: success_loader }]} componentExample={<SuccessLoader />} />
-    </NoSSR>
+    </>
   );
 };
 

@@ -8,7 +8,7 @@ import { StepperBase, StepperVerticalBase, StepperHorizontalNoHelper, stepper_ho
 
 const StepperGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Stepper</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>Used to keep the user on track when completing a specific task. By dividing the end goal into smaller sub tasks.</NotificationBody>
@@ -41,7 +41,7 @@ const StepperGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>No helper</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "stepper_horizontal_no_helper.tsx", code: stepper_horizontal_no_helper }]} componentExample={<StepperHorizontalNoHelper />} />
-    </NoSSR>
+    </>
   );
 };
 

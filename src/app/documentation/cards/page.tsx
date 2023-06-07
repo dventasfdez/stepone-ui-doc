@@ -13,7 +13,7 @@ import { DragAndDropCards, drag_and_drop_card, drag_and_drop_data_mock_file } fr
 import NoSSR from "@/components/shared/notifications/noSSR/noSSR";
 const CardsGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Cards</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>We have different components of cards</NotificationBody>
@@ -129,7 +129,7 @@ const CardsGuideline: React.FC<any> = (): ReactElement => {
         ]}
         componentExample={<DragAndDropCards />}
       />
-    </NoSSR>
+    </>
   );
 };
 

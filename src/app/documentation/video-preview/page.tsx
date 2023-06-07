@@ -26,7 +26,7 @@ import {
 
 const VideoPreviewGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Video Preview</h3>
       <Notification show read className="static-notification mb6">
         <NotificationHeader>Definition</NotificationHeader>
@@ -127,7 +127,7 @@ const VideoPreviewGuideline: React.FC<any> = (): ReactElement => {
         ]}
         componentExample={<VideoPreviewMediumWithSubtitleComponent />}
       />
-    </NoSSR>
+    </>
   );
 };
 

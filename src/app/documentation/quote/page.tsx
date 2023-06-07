@@ -8,7 +8,7 @@ import { AvatarWithoutImageQuote, CompleteAvatarQuote, DefaultQuote, avatar_with
 
 const QuoteGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Quote</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>Quote component displays a quotation from a person or source, e.g., a publication.</NotificationBody>
@@ -31,7 +31,7 @@ const QuoteGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Example of a quote with avatar without image by adding avatar without image prop.</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "avatar_without_image_quote.tsx", code: avatar_without_image_quote }]} componentExample={<AvatarWithoutImageQuote />} />
-    </NoSSR>
+    </>
   );
 };
 

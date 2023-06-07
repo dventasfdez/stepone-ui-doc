@@ -26,7 +26,7 @@ import {
 
 const ContentSwitcherGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>ContentSwitcher</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>The ContentSwitcher is a styled component that toggles the visible information.</NotificationBody>
@@ -100,7 +100,7 @@ const ContentSwitcherGuideline: React.FC<any> = (): ReactElement => {
         ]}
         componentExample={<DisabledContentSwitcher />}
       />
-    </NoSSR>
+    </>
   );
 };
 

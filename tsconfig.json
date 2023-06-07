@@ -14,6 +14,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "downlevelIteration": true, //allows the iteration through formData.entries() (and other iterables) for typescript
     "plugins": [
       {
         "name": "next"

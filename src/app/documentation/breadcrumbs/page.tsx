@@ -8,7 +8,7 @@ import ComponentExample from "@/components/content/documentantion/ComponentExamp
 import NoSSR from "@/components/shared/notifications/noSSR/noSSR";
 const BreadcrumbsGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>Breadcrumbs</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>The Breadcrumbs is a styled component that displays the user&apos;s current location within the application.</NotificationBody>
@@ -26,7 +26,7 @@ const BreadcrumbsGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Example of Breadcrumbs with dropdown.</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "dropdown_breadcrumb.tsx", code: dropdown_breadcrumb }]} componentExample={<DropdownBreadcrumbComponent />} />
-    </NoSSR>
+    </>
   );
 };
 

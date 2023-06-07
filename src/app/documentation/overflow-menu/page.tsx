@@ -8,7 +8,7 @@ import { CloseOverflowMenuComponent, LinkOverflowMenuComponent, OverflowMenuComp
 
 const OverflowMenuGuideline: React.FC<any> = (): ReactElement => {
   return (
-    <NoSSR>
+    <>
       <h3>OverflowMenu</h3>
       <Notification show read className="static-notification mb6">
         <NotificationBody>The OverflowMenu is a Component that houses information of all kinds.</NotificationBody>
@@ -31,7 +31,7 @@ const OverflowMenuGuideline: React.FC<any> = (): ReactElement => {
         <NotificationBody>Example of an OverflowMenu with close icon by adding showCloseButton prop.</NotificationBody>
       </Notification>
       <ComponentExample codeExample={[{ name: "close_overflow_menu.tsx", code: close_overflow_menu }]} componentExample={<CloseOverflowMenuComponent />} />
-    </NoSSR>
+    </>
   );
 };
 

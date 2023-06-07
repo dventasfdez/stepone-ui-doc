@@ -2,9 +2,8 @@ import Header from "@/components/master/Header";
 import Head from "next/head";
 import NotificationsContainer from "@/components/shared/notifications/notifications-container";
 import "stepone-ui/index.css";
-import "./globals.css";
-import Link from "next/link";
-import Image from "next/image";
+
+import "../assets/styles/main.scss";
 import Footer from "@/components/master/Footer";
 export const metadata = {
   title: "UST | StepOne - UI framework",
@@ -21,8 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="stepone-ui">
         <Header />
         <main className="g-container">{children}</main>
-        <NotificationsContainer />
+
         <Footer />
+        <NotificationsContainer />
       </body>
     </html>
   );
