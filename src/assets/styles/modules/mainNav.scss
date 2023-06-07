@@ -7,8 +7,8 @@
     display: flex;
     height: 100%;
     padding: 0;
-    gap: 48px;
-    margin-right: 56px;
+    gap: calc(var(--unit) * 6);
+    margin-right: calc(var(--unit) * 7);
   }
   .stepone-ui .header-items {
     display: block;

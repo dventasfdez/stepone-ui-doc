@@ -20,8 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="stepone-ui">
         <Header />
         <main className="g-container">{children}</main>
-        <NotificationsContainer />
+
         <Footer />
+        <NotificationsContainer />
       </body>
     </html>
   );

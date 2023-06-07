@@ -16,18 +16,16 @@ export default function Footer() {
         <Link href="/">
           <Image className="footer-logo  " src="/UST-logo.svg" alt="Logo" width={48} height={52} priority style={{ objectFit: "contain" }} />
         </Link>
-        <a target="_blank" href="https://ust.com/">
-          UST.com
+        <a target="_blank" href="https://www.ust.com/">
+          @UST 2023
         </a>
         <a target="_blank" href=" https://www.ust.com/es/who-we-are/ust-newsroom">
           News & Events
         </a>
-
         <a target="_blank" href="https://www.linkedin.com/company/ustespana/?originalSubdomain=es">
           Linkedin
         </a>
         <a href="https://www.ust.com/es/who-we-are">Who we are</a>
-        <p className="footer-brand  ">@UST 2023</p>
       </div>
     </div>
   );

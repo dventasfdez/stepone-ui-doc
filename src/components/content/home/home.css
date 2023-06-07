@@ -6,7 +6,7 @@
 
 @media (max-width: 1820px) {
   .section-5 .figures-container {
-    padding: 20px !important;
+    padding: calc(var(--unit) * 3) !important;
   }
   .section-5 .figures-container .card_figure {
     min-height: 290px;
@@ -19,9 +19,10 @@
   }
   .stepone-ui .home .hero-content {
     color: var(--text-01) !important;
-    padding-top: 32px;
-    padding-bottom: 40px;
+    padding-top: calc(var(--unit) * 4);
+    padding-bottom: calc(var(--unit) * 5);
     display: block !important;
+    background: none;
   }
   .stepone-ui .home .card {
     max-width: calc(100% - 40px);
@@ -37,7 +38,7 @@
   }
   .stepone-ui .home .section-1 .hero-content {
     color: var(--text-01);
-    padding: 48px 0px 0px;
+    padding: calc(var(--unit) * 6) 0px 0px;
   }
 
   .stepone-ui .home .hero-background {
@@ -55,8 +56,8 @@
   }
   .home .team-component {
     background: #fff;
-    padding: 24px;
-    margin-top: 24px;
+    padding: calc(var(--unit) * 3);
+    margin-top: calc(var(--unit) * 3);
   }
   .home .team-component .mt10 {
     margin-top: 0 !important;

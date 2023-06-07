@@ -37,13 +37,13 @@ export default function DocumentationLayout({ children }: { children: React.Reac
                 <Link href="/documentation/forms">Forms</Link>
               </li>
               <li className="small-title guidline-option">
-                <span>Data tables</span>
+                <Link href="/documentation/data-table">Data tables</Link>
               </li>
               <li className="small-title guidline-option">
-                <span>Notifications system</span>
+                <Link href="/documentation/notifications">Notifications system</Link>
               </li>
               <li className="small-title guidline-option">
-                <span>Internationalization</span>
+                <Link href="/documentation/internazionalization">Internationalization</Link>
               </li>
             </ul>
           </div>
@@ -91,7 +91,7 @@ export default function DocumentationLayout({ children }: { children: React.Reac
                 <Link href="/documentation/loader">Loader</Link>
               </li>
               <li className="small-title guidline-option">
-                <span>Modal</span>
+                <Link href="/documentation/modal">Modal</Link>
               </li>
               <li className="small-title guidline-option">
                 <Link href="/documentation/notifications">Notifications</Link>
