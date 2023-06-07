@@ -1,6 +1,6 @@
 import { FiltersResults } from "@/components/content/results/constants";
 
-export const objectToQueryString = (values: any, router: any) => {
+export const objectToQueryString = (values: any) => {
   const values2 = convertObjectToSearchQuery(values);
   const _searchParams = new URLSearchParams(values2).toString();
   window?.history?.replaceState({}, "", `${location.pathname}?${_searchParams}`);

@@ -23,7 +23,7 @@ import { WithRouterProps } from "next/dist/client/with-router";
 
 export const ResultsContext = React.createContext({});
 
-interface ResultsProps extends WithRouterProps {
+interface ResultsProps {
   clientFiltering?: boolean; //if you want to do the filtering on the client side and not the backend
   defaultColumns: any[]; //the list of all the possible colums
   columns: any[]; //the list of collumns that the user has selected to show
@@ -118,7 +118,7 @@ class Results extends Component<ResultsProps, ResultsState> {
     let initialFilters = window.location.search ? queryStringToObject(window.location.search) : this.getDefaultFilters();
 
     if (!this.props.disableURLFilters || !window.location.search) {
-      if (!this.props.disableURLFilters) objectToQueryString(initialFilters, this.props.router);
+      if (!this.props.disableURLFilters) objectToQueryString(initialFilters);
     }
     return initialFilters;
   }
@@ -133,7 +133,7 @@ class Results extends Component<ResultsProps, ResultsState> {
         columns: this.props?.columns,
       });
       if (!this.props.disableURLFilters) {
-        objectToQueryString(newFilters, this.props.router);
+        objectToQueryString(newFilters);
       }
     }
     if (this.props.refresh !== this.state.refresh) {
@@ -144,7 +144,7 @@ class Results extends Component<ResultsProps, ResultsState> {
         results: undefined,
       });
       if (!this.props.disableURLFilters) {
-        objectToQueryString(newFilters, this.props.router);
+        objectToQueryString(newFilters);
       }
     }
   }
@@ -189,7 +189,7 @@ class Results extends Component<ResultsProps, ResultsState> {
           } else {
             this.setState({ results: response }, () => {
               if (!this.props.disableURLFilters) {
-                objectToQueryString(filtersAfterFetch, this.props.router);
+                objectToQueryString(filtersAfterFetch);
               }
             });
           }
@@ -219,7 +219,7 @@ class Results extends Component<ResultsProps, ResultsState> {
   onHandleClickPage = (page: number) => {
     this.setState({ filters: { ...this.state.filters, page: page } }, () => {
       if (!this.props.disableURLFilters) {
-        objectToQueryString({ ...this.state.filters, page: page }, this.props.router);
+        objectToQueryString({ ...this.state.filters, page: page });
       }
     });
   };
@@ -259,7 +259,7 @@ class Results extends Component<ResultsProps, ResultsState> {
   changeSortBy = (value: string, direction: string) => {
     this.setState({ filters: { ...this.state.filters, sortBy: value, sortDirection: direction } });
     if (!this.props.disableURLFilters) {
-      objectToQueryString({ ...this.state.filters, sortBy: value, sortDirection: direction }, this.props.router);
+      objectToQueryString({ ...this.state.filters, sortBy: value, sortDirection: direction });
     }
   };
   sortClientSide = (value: any, direction: any, response: any) => {
@@ -342,7 +342,7 @@ class Results extends Component<ResultsProps, ResultsState> {
       const newFilters = { ...filtersToRetain, ...formValues };
       this.setState({ filters: newFilters }, () => {
         if (!this.props.disableURLFilters) {
-          objectToQueryString({ ...this.state.filters, ...formValues }, this.props.router);
+          objectToQueryString({ ...this.state.filters, ...formValues });
         }
       });
     }
@@ -360,7 +360,7 @@ class Results extends Component<ResultsProps, ResultsState> {
       if (JSON.stringify(newFilters) !== JSON.stringify(this.state.filters)) {
         this.setState({ filters: newFilters }, () => {
           if (!this.props.disableURLFilters) {
-            objectToQueryString(newFilters, this.props.router);
+            objectToQueryString(newFilters);
           }
         });
       }
