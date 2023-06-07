@@ -19,7 +19,7 @@ export default function Section1() {
           <div className="hero-body ">
             <div className="flex" style={{ maxWidth: "583px" }}>
               <div className="card g-item_4 m2">
-                <div className="card-header " id="card header">
+                <div className="card-header ">
                   <h4 className="m0">How to start</h4>
                 </div>
                 <div className="card-body " id="card body">
@@ -31,7 +31,7 @@ export default function Section1() {
               </div>
 
               <div className="card  g-item_4 m2">
-                <div className="card-header " id="card header">
+                <div className="card-header ">
                   <h4 className="m0">Download Assets</h4>
                 </div>
                 <div className="card-body " id="card body">
@@ -47,31 +47,32 @@ export default function Section1() {
               <div className="ml2 mr2">
                 <p className="mt10 large text-01">UST StepOne Design System team:</p>
               </div>
-              <div className="g-item_4 ">
-                <Avatar className="m2" big={true} title="Pablo Martin" subtitle="Developer">
-                  <img src="https://www.w3schools.com/howto/img_avatar.png" alt="avatar" />
-                </Avatar>
-              </div>
+
               <div className="g-item_4">
                 <Avatar className="m2" big={true} title="David Ventas" subtitle="Developer">
-                  <img src="https://www.w3schools.com/howto/img_avatar.png" alt="avatar" />
+                  <img src="/David-Ventas.jpg" alt="avatar" />
                 </Avatar>
               </div>
               <div className="g-item_4">
                 <Avatar className="m2" big={true} title="David Cuenca" subtitle="Developer">
-                  <img src="https://www.w3schools.com/howto/img_avatar.png" alt="avatar" />
+                  <img src="/David-Cuenca.jpg" alt="avatar" />
+                </Avatar>
+              </div>
+              <div className="g-item_4 ">
+                <Avatar className="m2" big={true} title="Pablo Martin" subtitle="Developer">
+                  <img src="/Pablo-Martín.jpg" alt="avatar" />
                 </Avatar>
               </div>
               <div className="g-item_4">
                 <Avatar className="m2" big={true} title="Miguel Mateos" subtitle="UX/UI Designer">
-                  <img src="https://www.w3schools.com/howto/img_avatar.png" alt="avatar" />
+                  <img src="/Miguel-Mateos.jpg" alt="avatar" />
                 </Avatar>
               </div>
               <div className="clearfix"></div>
             </div>
           </div>
         </div>
-        <img src="/hero-background-image-min.png" alt="hero image" className="hero-background  " />
+        <img src="/hero-background-image-min.jpg" alt="hero image" className="hero-background  " />
       </div>
 
       <div className="clearfix"></div>

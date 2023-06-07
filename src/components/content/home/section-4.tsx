@@ -8,7 +8,7 @@ export default function Section4() {
         <div className="g-container flex">
           <div className="g-item_8  flex" style={{ justifyContent: "center", alignItems: "center", backgroundColor: "#F8F8F9" }}>
             <div className="m20 p2 mobile-margin-standar" style={{ backgroundColor: "#FFF" }}>
-              <img src="/section-image-3-min.png" alt="hero image" />
+              <img src="/section-image-3-min.jpg" alt="hero image" />
             </div>
           </div>
           <div className="g-item_8" style={{ justifyContent: "center" }}>

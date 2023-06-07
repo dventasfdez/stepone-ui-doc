@@ -44,7 +44,7 @@ export const VerticalCard: React.FC<any> = (): ReactElement => {
         <div className="status-tag_success">{data_mock.statusTag}</div>
         <span className="caption">{data_mock.date}</span>
       </CardTop>
-      <CardHeader id="card header">
+      <CardHeader>
         <img alt="avatar image" className="avatar_big" id="avatar image" src={data_mock.avatarSrc} />
         <h4>{data_mock.title}</h4>
         <span className="subtitle">{data_mock.subtitle}</span>
@@ -129,7 +129,7 @@ const VerticalCard: React.FC<any> = (): ReactElement => {
       <div className="status-tag_success">{data_mock.statusTag}</div>
       <span className="caption">{data_mock.date}</span>
     </CardTop>
-    <CardHeader id="card header">
+    <CardHeader >
       <img alt="avatar image" className="avatar_big" id="avatar image" src={data_mock.avatarSrc} />
       <h4>{data_mock.title}</h4>
       <span className="subtitle">{data_mock.subtitle}</span>
@@ -195,7 +195,7 @@ export const HorizontalCard: React.FC<any> = (): ReactElement => {
         <div className="status-tag_success">{data_mock.statusTag}</div>
         <span className="caption">{data_mock.date}</span>
       </CardTop>
-      <CardHeader id="card header">
+      <CardHeader>
         <img alt="avatar image" className="avatar_big" id="avatar image" src={data_mock.avatarSrc} />
         <h4>{data_mock.title}</h4>
         <span className="subtitle">{data_mock.subtitle}</span>
@@ -262,7 +262,7 @@ const HorizontalCard: React.FC<any> = (): ReactElement => {
       <div className="status-tag_success">{data_mock.statusTag}</div>
       <span className="caption">{data_mock.date}</span>
     </CardTop>
-    <CardHeader id="card header">
+    <CardHeader >
       <img alt="avatar image" className="avatar_big" id="avatar image" src={data_mock.avatarSrc} />
       <h4>{data_mock.title}</h4>
       <span className="subtitle">{data_mock.subtitle}</span>

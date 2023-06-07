@@ -5,7 +5,7 @@ export default function Section2() {
   return (
     <>
       <div className="hero-container ">
-        <img src="/section-image-1-min.png" alt="hero image" className="hero-background  " />
+        <img src="/section-image-1-min.jpg" alt="hero image" className="hero-background  " />
         <div className="hero-content" style={{ justifyContent: "center" }}>
           <div className="hero-header ">
             <div className="m2" style={{ maxWidth: "583px" }}>

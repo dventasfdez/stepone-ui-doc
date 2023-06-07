@@ -13,7 +13,7 @@ export default function Variables() {
           StepOne&apos;s styling. To override these variables, you need to redefine them with your desired values.
         </p>
         <p>Here are some of the commonly used default variables in StepOne:</p>
-        <ul>
+        {/* <ul>
           <li>
             <code>--primary-color</code> - Defines the primary color used for buttons, links, and other components.
           </li>
@@ -29,7 +29,51 @@ export default function Variables() {
           <li>
             <code>--container-max-width</code> - Sets the maximum width of the container element.
           </li>
-        </ul>
+        </ul> */}
+        <pre>
+          {`$desktop-big: 1800px;
+$desktop: 1280px;
+$laptop: 1024px;
+$tablet: 960px;
+$mobile: 640px;
+:root {
+    --grid-unit: 10px;
+    /*margins and paddings*/
+    --global-padding: var(--grid-unit);
+    --global-margin: var(--grid-unit);
+    /*colors*/
+    --primary-color: #304e89; 
+    --accent-color: #2d79c1;
+    --link-color: var(--accent-color);
+    --light-grey: #f1f1f1;
+    --grey: #eeeeee;
+    --dark-grey: #747474;
+    --warning-color: var(--yellow);
+    --success-color: var(--green);
+    --default-color: var(--dark-grey);
+    --error-color: var(--red);
+    --info-color: var(--blue);
+    /*inputs and buttons*/
+    --input-background: #fafafa;
+    --input-height: calc(var(--global-line-height) + 30px);
+    --textarea-height: calc(var(--input-height) * 2);
+    --button-padding: calc(var(--global-padding)/2) calc(var(--global-padding)*2);
+    /*border*/
+    --global-border: 1px solid #ddd;
+    --light-border: 1px solid var(--light-grey);
+    --border-radius: 5px;
+    /*fonts*/
+    --font-color: var(--black);
+    --global-font-size: 14px;
+    --global-line-height: 22px;
+    --small-font-size: 12px;
+    --global-font-family: "Open Sans", Arial;
+    /*transitions*/
+    --transition: 0.3s;
+}   
+`}
+        </pre>
+
         <h3>Overriding Variables</h3>
         <p>To override the default variables in StepOne, you can define new values for the variables either in a separate CSS file or inline within your HTML.</p>
         <h4>External CSS File</h4>
