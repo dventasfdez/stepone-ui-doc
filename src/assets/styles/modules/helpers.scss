@@ -1,5 +1,5 @@
 .mobile-display {
-  display: none;
+  display: none !important;
 }
 @media (max-width: 1024px) {
   .stepone-ui .mobile-padding-standar {
@@ -9,6 +9,6 @@
     margin: calc(var(--unit) * 6) calc(var(--unit) * 4) calc(var(--unit) * 4) !important;
   }
   .mobile-display {
-    display: block;
+    display: block !important;
   }
 }

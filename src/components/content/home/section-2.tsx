@@ -10,7 +10,7 @@ export default function Section2() {
           <div className="hero-header ">
             <div className="m2" style={{ maxWidth: "583px" }}>
               <h3 className="h4 mb1">Importance of a Design System</h3>
-              <div className="base">Unlocking the Power of Design Systems</div>
+              <div className="subtitle">Unlocking the Power of Design Systems</div>
             </div>
           </div>
           <div className="hero-body ">

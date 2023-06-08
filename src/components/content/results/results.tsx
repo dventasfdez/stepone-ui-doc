@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import _ from "lodash";
-import { serializeForm } from "stepone-ui/forms";
+import { HiddenInput, serializeForm } from "stepone-ui/forms";
 
 // import { objectToQueryString, queryStringToObject } from "../../utilities/url";
 import { FiltersResults, ResultsI } from "./constants";
@@ -37,7 +37,6 @@ interface ResultsProps {
   noFiltersNoFetch?: boolean; //if the filters are empty, avoid to fetch the data and leave the table empty
   filterResults?: Function; //function to override the filtering when it's client side
   forceRefresh?: number; //force the refresh of the table, repeating a fetch. Usefull if for instance you modified or removed the data
-  refresh?: number; //it's just a number that allow us to refresh, use forceRefresh instead
   defaultFiltersResults?: FiltersResults; //list of default filters when results is mounted
   customClientSideSort?: Function; //to override the shorting if it's client side
   hideTableConfiguration?: boolean; //hides the dropdown that allows the user to change the columns and their order
@@ -45,8 +44,7 @@ interface ResultsProps {
   itemsPerPage?: number[]; //how many items are in each page (for rendering the pagination)
   disablePagination?: boolean; //removes the pagination
   showTopScroll?: boolean; //shows a scroll bar on the top
-  disableFilters?: boolean; //NO IDEA!
-  showNestedRow?: boolean; //NO IDEA
+  disableFilters?: boolean; //Removes the filtering functionality
 }
 
 interface ResultsState {
@@ -55,7 +53,6 @@ interface ResultsState {
   filters: FiltersResults;
   cachedResults?: any;
   forceRefresh: number;
-  refresh?: number;
 }
 
 export const defaultFiltersResults = { page: 1, perPage: 10 };
@@ -74,7 +71,6 @@ class Results extends Component<ResultsProps, ResultsState> {
       filters: this.getInitialFilters(),
       cachedResults: null,
       forceRefresh: this.props.forceRefresh || 0,
-      refresh: this.props.refresh,
     };
     this.clientFiltering = this.props.clientFiltering;
     this.changeColumns = this.changeColumns.bind(this);
@@ -94,10 +90,9 @@ class Results extends Component<ResultsProps, ResultsState> {
       this._isValid &&
       (JSON.stringify(prevProps.defaultColumns) !== JSON.stringify(this.props.defaultColumns) ||
         JSON.stringify(this.state.filters) !== JSON.stringify(prevState.filters) ||
-        prevState.forceRefresh !== this.state.forceRefresh ||
-        prevState.refresh !== this.state.refresh)
+        prevState.forceRefresh !== this.state.forceRefresh)
     ) {
-      if (this.clientFiltering && (prevState.forceRefresh !== this.state.forceRefresh || prevState.refresh !== this.state.refresh) && this.state.cachedResults !== null) {
+      if (this.clientFiltering && prevState.forceRefresh !== this.state.forceRefresh && this.state.cachedResults !== null) {
         this.setState({ cachedResults: null });
       }
       this.fetchResultThenUpdate("componentDidUpdate");
@@ -131,17 +126,6 @@ class Results extends Component<ResultsProps, ResultsState> {
         filters: newFilters,
         results: undefined,
         columns: this.props?.columns,
-      });
-      if (!this.props.disableURLFilters) {
-        objectToQueryString(newFilters);
-      }
-    }
-    if (this.props.refresh !== this.state.refresh) {
-      const newFilters = this.state?.filters || this.getDefaultFilters();
-      this.setState({
-        refresh: this.props.refresh,
-        filters: newFilters,
-        results: undefined,
       });
       if (!this.props.disableURLFilters) {
         objectToQueryString(newFilters);
@@ -322,24 +306,14 @@ class Results extends Component<ResultsProps, ResultsState> {
   validateForm = async () => {
     this._isValid = this.filtersFormRef && this.filtersFormRef.current ? await this.filtersFormRef.current.isValid() : true;
   };
-  handleSubmitAdvanced = async (e: any) => {
+
+  handleSubmit = async (e: any) => {
     this._isValid = await (this.filtersFormRef && this.filtersFormRef.current ? this.filtersFormRef.current.isValid() : true);
     if (this._isValid) {
       const formValues = this.serializeFormMapValues(e.target);
-      //only keep the filters from the state
-      const filtersToRetain: FiltersResults = {};
-      if (this.props.defaultFiltersResults) {
-        Object.keys(this.props.defaultFiltersResults).forEach((keyDeafultProps: string) => {
-          filtersToRetain[keyDeafultProps] = this.state?.filters[keyDeafultProps];
-        });
-      } else {
-        Object.keys({ page: 1, perPage: 10 }).forEach((keyDeafult: string) => {
-          filtersToRetain[keyDeafult] = this.state?.filters[keyDeafult];
-        });
-      }
       //Reset page
-      if (!this.props.disablePagination) filtersToRetain["page"] = 1;
-      const newFilters = { ...filtersToRetain, ...formValues };
+      if (!this.props.disablePagination) formValues["page"] = 1;
+      const newFilters = formValues;
       this.setState({ filters: newFilters }, () => {
         if (!this.props.disableURLFilters) {
           objectToQueryString({ ...this.state.filters, ...formValues });
@@ -352,11 +326,7 @@ class Results extends Component<ResultsProps, ResultsState> {
     this._isValid = await (this.filtersFormRef && this.filtersFormRef.current ? this.filtersFormRef.current.isValid() : true);
     if (this._isValid) {
       const formValues = this.parserFormValues(this.filtersFormRef.current.serialize());
-      const filtersToRetain: FiltersResults = {
-        ...this.state?.filters,
-        page: this.props.disablePagination ? undefined : 1,
-      };
-      const newFilters = { ...filtersToRetain, ...formValues };
+      const newFilters = formValues;
       if (JSON.stringify(newFilters) !== JSON.stringify(this.state.filters)) {
         this.setState({ filters: newFilters }, () => {
           if (!this.props.disableURLFilters) {
@@ -385,9 +355,9 @@ class Results extends Component<ResultsProps, ResultsState> {
     }
     value.page = this.props.disablePagination ? undefined : 1;
     this.setState({ filters: value }, () => {
-      // if (!this.props.disableURLFilters) {
-      //   objectToQueryString(value, this.props.history);
-      // }
+      if (!this.props.disableURLFilters) {
+        objectToQueryString(value);
+      }
     });
   };
   getFiltersTable = () => {
@@ -443,24 +413,26 @@ class Results extends Component<ResultsProps, ResultsState> {
                 id="filtersForm"
                 className="results-wrapper"
                 loading={typeof this.state?.results === "undefined"}
-                onSubmit={this.handleSubmitAdvanced}
+                onSubmit={this.handleSubmit}
                 onChange={this.props.filterOnChange ? this.handleOnChange : undefined}
                 values={this.state.filters}
                 noValidate
                 ref={this.filtersFormRef}
                 debounceTimer={1000}
               >
+                <HiddenInput name="page" />
+                <HiddenInput name="perPage" />
+                <HiddenInput name="sortDirection" />
+                <HiddenInput name="sortBy" />
                 <Filters change={null} values={_currentFiltersTable} handleClearFilters={this.clearFieldValue} formRef={this.filtersFormRef}>
                   {this.props.children}
                 </Filters>
-
                 {(this.props.hideFiltersSummary !== true || this.props.hideTableConfiguration !== true) && (
                   <div className="results-summary-container">
                     {this.props.hideFiltersSummary !== true && <FiltersSummary filterValues={_currentFiltersTable} clearFieldValue={this.clearFieldValue} />}
                     {this.props.hideTableConfiguration !== true && <TableConfiguration changeColumns={this.changeColumns} columns={this.state.columns} defaultColumns={this.props.columns} />}
                   </div>
                 )}
-
                 <GridView
                   results={this.state.results}
                   columns={displayedColumns}
@@ -473,7 +445,6 @@ class Results extends Component<ResultsProps, ResultsState> {
                   // tableId={this.props.tableId}
                   showTopScroll={this.props.showTopScroll}
                 />
-
                 {this._isValid && resultsCountDefined && !this.props.disablePagination && (
                   <Paginator
                     className="data-table-paginator"

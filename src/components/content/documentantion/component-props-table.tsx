@@ -34,8 +34,8 @@ const ComponentPropsTable: React.FC<ComponentPropsTableProps> = (props): ReactEl
           </tr>
         </thead>
         <tbody>
-          {propsDefinition?.map((prop) => (
-            <tr key={prop?.name}>
+          {propsDefinition?.map((prop, i) => (
+            <tr key={i}>
               <td>{prop?.name}</td>
               <td>
                 <div className={prop?.use ? "status-tag_alert" : "status-tag_info"}>{prop?.use ? "required" : "optional"}</div>
